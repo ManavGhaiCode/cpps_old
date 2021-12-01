@@ -4,9 +4,9 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
 # Extions
 
 1. Print
-    description - print is a function with 10+ overloads to print **Vectors**, **Strings**, **Chars**, **ints** and **Arrays**. It can be usefull in building *clis*(*commend line interpases*).
+    **description** - print is a function with 10+ overloads to print **Vectors**, **Strings**, **Chars**, **ints** and **Arrays**. It can be usefull in building *clis*(*commend line interpases*).
 
-    how it works? - It takes in one argument to print out the infomation into the *commend line*.
+    **how it works?** - It takes in one argument to print out the infomation into the *commend line*.
 
 2. Input
 
