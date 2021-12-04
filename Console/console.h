@@ -18,6 +18,15 @@ class Console
         Console(function<int (string[])> func)
         {
             change_FM(func);
+            this->run();
+        }
+
+        void run()
+        {
+            cout << "Console - " << "\n" << endl;
+            string arr[] {"lol", "lol2", "lol3"};
+            func_main(arr);
+            cout << endl;
         }
 };
 
