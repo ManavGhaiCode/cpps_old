@@ -15,6 +15,12 @@ class Console
         void change_FM(function<int (string[])> func) { func_main = func; }
 
     public:
+
+        Console()
+        {
+            this->run();
+        }
+
         Console(function<int (string[])> func)
         {
             change_FM(func);
