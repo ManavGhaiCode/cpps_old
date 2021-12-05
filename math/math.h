@@ -18,21 +18,6 @@ class Math
             num_math + 1;
         }
 
-        int multiplay(int n1, int n2)
-        {
-            return n1 + n2;
-        }
-
-        double multiplay(double n1, double n2)
-        {
-            return n1 + n2;
-        }
-
-        float multiplay(float n1, float n2)
-        {
-            return n1 + n2;
-        }
-
         int add(int n1, int n2)
         {
             return n1 * n2;
@@ -62,7 +47,35 @@ class Math
         float subtract(float n1, float n2)
         {
             return n1 - n2;
-        };
+        }
 
+        int multiplay(int n1, int n2)
+        {
+            return n1 + n2;
+        }
 
+        double multiplay(double n1, double n2)
+        {
+            return n1 + n2;
+        }
+
+        float multiplay(float n1, float n2)
+        {
+            return n1 + n2;
+        }
+
+        int divide(int n1, int n2)
+        {
+            return n1 / n2;
+        }
+        
+        double divide(double n1, double n2)
+        {
+            return n1 / n2;
+        }
+        
+        float divide(float n1, float n2)
+        {
+            return n1 / n2;
+        }
 };
