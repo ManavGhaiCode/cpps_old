@@ -18,6 +18,8 @@ class Math
             num_math + 1;
         }
 
+        // add methords
+
         int add(int n1, int n2)
         {
             return n1 * n2;
@@ -28,11 +30,12 @@ class Math
             return n1 + n2;
         }
 
-
         float add(float n1, float n2)
         {
             return n1 + n2;
         }
+
+        // sudtract methords
 
         int subtract(int n1, int n2)
         {
@@ -49,6 +52,8 @@ class Math
             return n1 - n2;
         }
 
+        // multiplay methords
+
         int multiplay(int n1, int n2)
         {
             return n1 + n2;
@@ -63,6 +68,8 @@ class Math
         {
             return n1 + n2;
         }
+
+        // divide methords
 
         int divide(int n1, int n2)
         {
