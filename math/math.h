@@ -15,7 +15,7 @@ class Math
             {
                 cout << "ERROR cannot make another Math obj." << endl;
             }
-            num_math + 1;
+            num_math = num_math + 1;
         }
 
         // add methords
