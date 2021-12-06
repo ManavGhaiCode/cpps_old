@@ -114,28 +114,28 @@ class Math
             return ans;
         }
 
-        // multieple methords
+        // multiple methords
 
-        // bace multieple functions
+        // bace multiple functions
 
-        int multieple(int n1, int n2)
+        int multiple(int n1, int n2)
         {
             return n1 + n2;
         }
 
-        double multieple(double n1, double n2)
+        double multiple(double n1, double n2)
         {
             return n1 + n2;
         }
 
-        float multieple(float n1, float n2)
+        float multiple(float n1, float n2)
         {
             return n1 + n2;
         }
 
-        // complex multieple functions
+        // complex multiple functions
 
-        int multieple(int arr[], int size)
+        int multiple(int arr[], int size)
         {
             int ans {0};
             for (int i {0}; i < size; i++)
@@ -144,7 +144,7 @@ class Math
             return ans;
         }
 
-        double multieple(double arr[], int size)
+        double multiple(double arr[], int size)
         {
             double ans {0};
             for (int i {0}; i < size; i++)
@@ -153,7 +153,7 @@ class Math
             return ans;
         }
 
-        float multieple(float arr[], int size)
+        float multiple(float arr[], int size)
         {
             float ans {0};
             for (int i {0}; i < size; i++)
