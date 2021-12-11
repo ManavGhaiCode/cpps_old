@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <cmath>
 
 using namespace std;
 
@@ -208,5 +209,27 @@ class Math
                 ans = ans / arr[i];
 
             return ans;
+        }
+
+        // Floor, Ceil functions
+
+        // Floor Function
+
+        int Floor(double num)
+        {
+            int rnum;
+            rnum = floor(num);
+
+            return rnum;
+        }
+
+        // Ceil function
+
+        int Ceil(double num)
+        {
+            int rnum;
+            rnum = ceil(num);
+
+            return rnum;
         }
 };
