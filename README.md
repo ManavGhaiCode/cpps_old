@@ -59,7 +59,15 @@ int lolInfinity()
 Console conmain {lolInfinity};
 ```
 
-In the following code it looks like only 2 console are created but if you think about the lolInfinity is a recursive function u make a console which makes console and the console which was made also makes consoles and so no. 🌋🌋🌋 no more ram left ): .
+In the following code it looks like only 2 console are created but if you think about the lolInfinity is a recursive function u make a console which makes console and the console which was made also makes consoles and so no. 🌋🌋🌋 no more ram left ):
+
+# Install
+
+to install the repo choose one release -
+
+    [1.2.0](https://github.com/ManavGhaiCode/cpps/releases/tag/1.2.0)
+
+and get the zip verson and unzip it.
 
 # SORRY
 
