@@ -233,3 +233,6 @@ class Math
             return rnum;
         }
 };
+
+int Math::num_math {0};
+Math math;
