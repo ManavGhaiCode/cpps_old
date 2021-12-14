@@ -36,3 +36,7 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
 
     Console con {lol};
     ```
+
+4. math
+
+    **decription** - math is a very simple object with 6 functions add, subtract, multiple, divide, Floor, Ceil. You shold have under-stood what the functions do by now.
