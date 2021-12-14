@@ -41,6 +41,26 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
 
     **decription** - math is a very simple object with 6 functions add, subtract, multiple, divide, Floor, Ceil. You shold have under-stood what the functions do by now.
 
+# DANGER!
+
+1. infinity Consoles - if we run the following code it can cause in infinity consoles and a blue screen of death on Windows. Note plz dont run the following code.
+
+```c++
+#include "console.h"
+#include "print"
+#include <string>
+
+int lolInfinity()
+{
+    Console con {lolInfinity};
+    print("lol")
+}
+
+Console conmain {lolInfinity};
+```
+
+In the following code it looks like only 2 console are created but if you think about the lolInfinity is a recursive function u make a console which makes console and the console which was made also makes consoles and so no. 🌋🌋🌋 no more ram left ): .
+
 # SORRY
 
 I would like to SORRY because of the 3 typos in this repo this was made with a very bad membrane keybord.
