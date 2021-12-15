@@ -65,7 +65,7 @@ In the following code it looks like only 2 console are created but if you think 
 
 to install the repo choose one release -
 
-    [1.2.0](https://github.com/ManavGhaiCode/cpps/releases/tag/1.2.0)
+[1.2.0](https://github.com/ManavGhaiCode/cpps/releases/tag/1.2.0)
 
 and get the zip verson and unzip it.
 
