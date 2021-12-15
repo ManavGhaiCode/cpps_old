@@ -41,6 +41,16 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
 
     **decription** - math is a very simple object with 6 functions add, subtract, multiple, divide, Floor, Ceil. You shold have under-stood what the functions do by now.
 
+5. char-add-ons
+
+    **decription** - this file live in "*/chars/chars.h" the file has 2 functions for array of chars called **ConsvertChar**, **CompileChar** both take in **2 things** the array of chars itself and the size of the array.
+
+    **what does ConsvertChar do?** - it returns an array of strings based on the array that you pass in.
+
+    **what does CompileChar do?** - it compiles a array of chars to a single string.
+
+    **how ConsvertChar works?** - it takes in a array of chars and loops over that array add the char at that point to the string in the return-array, if the char at the point of the array in " " then we make a new string in the return-array.
+
 # DANGER!
 
 1. infinity Consoles - if we run the following code it can cause in infinity consoles and a blue screen of death on Windows. Note plz dont run the following code.
