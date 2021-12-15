@@ -1,5 +1,5 @@
 # cpps
-cpps is a a library for c++ which adds abstractions like print functions, input functions, Consoles like Consoles in JS but much better, a dev only terminal, etc.
+cpps is a a library for c++ which adds abstractions like print functions, input functions, Consoles like Consoles in JS but much better, a dev only terminal, etc. plz see the danger area before doing some thing you don't understand. 
 
 # Extions
 
@@ -69,7 +69,7 @@ int lolInfinity()
 Console conmain {lolInfinity};
 ```
 
-In the following code it looks like only 2 console are created but if you think about the lolInfinity is a recursive function u make a console which makes console and the console which was made also makes consoles and so on. 🌋🌋🌋 no more ram left ):
+In the following code it looks like only 2 console are created but if you think about the lolInfinity is a recursive function you make a console which makes console and the console which was made also makes consoles and so on. 🌋🌋🌋 no more ram left ):
 
 # Install
 
