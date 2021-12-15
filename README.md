@@ -59,7 +59,7 @@ int lolInfinity()
 Console conmain {lolInfinity};
 ```
 
-In the following code it looks like only 2 console are created but if you think about the lolInfinity is a recursive function u make a console which makes console and the console which was made also makes consoles and so no. 🌋🌋🌋 no more ram left ):
+In the following code it looks like only 2 console are created but if you think about the lolInfinity is a recursive function u make a console which makes console and the console which was made also makes consoles and so on. 🌋🌋🌋 no more ram left ):
 
 # Install
 
@@ -71,4 +71,4 @@ and get the zip verson and unzip it.
 
 # SORRY
 
-I would like to SORRY because of the 3 typos in this repo this was made with a very bad membrane keybord.
+I would like to SORRY because of the 4 typos history in this repo this was made with a very bad membrane keybord.
