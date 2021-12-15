@@ -4,7 +4,7 @@
 
 using namespace std;
 
-string* Convert(char **c, int size)
+string* ConvertChar(char **c, int size)
 {
     if (size <= 100)
     {
@@ -27,4 +27,13 @@ string* Convert(char **c, int size)
     }
 
     return rsarr;
+}
+
+string CompileChar(char **c, int size)
+{
+    string s;
+    for (int i {0}; i < size; i++)
+    {
+        s = s + c[i];
+    }  
 }
