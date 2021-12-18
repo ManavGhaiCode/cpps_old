@@ -4,19 +4,6 @@
 
 using namespace std;
 
-void print(int);
-void print(double);
-void print(string);
-void print(char);
-void print(int[]);
-void print(double[]);
-void print(string[]);
-void print(char[]);
-void print(vector<int>);
-void print(vector<double>);
-void print(vector<string>);
-void print(vector<char>);
-
 void print(int var) 
 {
     cout << var << endl;
