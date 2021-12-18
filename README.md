@@ -81,4 +81,4 @@ and get the zip verson and unzip it.
 
 # SORRY
 
-I would like to SORRY because of the 4 typos history in this repo this was made with a very bad membrane keybord.
+I would like to SORRY because of the 5 typos history in this repo this was made with a very bad membrane keybord.
