@@ -1,3 +1,6 @@
+#ifndef _CONSOLE_H_
+#define _CONSOLE_H_
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -40,3 +43,5 @@ int main()
 {
     return 0;
 }
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef _PRINT_H_
+#define _PRINT_H_
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -68,3 +71,5 @@ void print(vector<char> var)
     for (auto s : var)
         cout << s << endl;
 }
+
+#endif
