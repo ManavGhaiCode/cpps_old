@@ -5,8 +5,10 @@
 #include <vector>
 
 #include "nodes.h"
+#include "../printExtion/print.h"
 
-using namespace std;
+using std::vector;
+using std::string;
 
 class list
 {
@@ -30,9 +32,58 @@ class list
             add(value);
         };
 
-        void add(int value);
-        void add(double value);
-        void add(string value);
+        void add(int value)
+        {
+            nodeInt newNode {value, indexes};
+
+            VECTOR_OF_INT.push_back(newNode);
+        }
+
+        void add(double value)
+        {
+            nodeDouble newNode {value, indexes};
+
+            VECTOR_OF_DOUBLE.push_back(newNode);
+        }
+
+        void add(string value)
+        {
+         nodeStr newNode {value, indexes};
+
+            VECTOR_OF_STRING.push_back(newNode);
+        }
+
+        int at(int index, int type)
+        {
+            for (auto node : VECTOR_OF_INT)
+                if (node.getIndex() == index)
+                    return node.getValue();
+    
+            print("Cannot find a node at ");
+            return 0;
+        }
+
+        double at(int index, double type)
+        {
+            for (auto node : VECTOR_OF_DOUBLE)
+                if (node.getIndex() == index)
+                    return node.getValue();
+
+            
+
+            print("Cannot find a node at ");
+            return 0.00;
+        }
+
+        string at(int index, string type)
+        {
+            for (auto node : VECTOR_OF_STRING)
+                if (node.getIndex() == index)
+                    return node.getValue();
+    
+            print("Cannot find a node at ");
+            return "";
+        }
     
 };
 

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#include "../printExtion/print.h"
+using std::string;
 
 class nodeInt
 {
@@ -26,6 +26,11 @@ class nodeInt
         int getValue()
         {
             return this->value;
+        }
+
+        int getIndex()
+        {
+            return this->index;
         }
 
 };
@@ -63,6 +68,11 @@ class nodeStr
             return this->len;
         }
 
+        int getIndex()
+        {
+            return this->index;
+        }
+
 };
 
 class nodeDouble
@@ -88,6 +98,11 @@ class nodeDouble
         double getValue()
         {
             return this->value;
+        }
+
+        int getIndex()
+        {
+            return this->index;
         }
 
 };
