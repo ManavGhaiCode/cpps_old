@@ -8,7 +8,9 @@ int main()
     list myList {};
 
     myList.add(5);
+    myList.add(2);
+    myList.add(5.0488);
+    myList.add("lol");
 
-    auto thing {myList.at(1, 0)};
-    cout << thing << endl;
+    myList.log();
 }
