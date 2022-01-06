@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
+#include <cctype>
 
 #include "nodes.h"
 #include "../printExtion/print.h"
@@ -26,6 +28,8 @@ class list
             for (auto node : VECTOR_OF_INT)
                 if (node.getIndex() == index)
                     return node.getValue();
+            if (index > indexes)
+                return 0;
         }
 
         double sat(int index, double type)
@@ -33,6 +37,8 @@ class list
             for (auto node : VECTOR_OF_DOUBLE)
                 if (node.getIndex() == index)
                     return node.getValue();
+            if (index > indexes)
+                return 0.00;
         }
 
         string sat(int index, string type)
@@ -40,6 +46,8 @@ class list
             for (auto node : VECTOR_OF_STRING)
                 if (node.getIndex() == index)
                     return node.getValue();
+            if (index > indexes)
+                return 0;
         }
 
     public:
@@ -119,20 +127,23 @@ class list
 
                         in = in + 1;
 
+
             for (auto node : VECTOR_OF_DOUBLE)
                 if (this->sat(in, 0.00) != 0.00)
-                    if (in <= indexes)
+                    if (in <= indexes) {
                         cout << "    " << node.getValue() << endl;
 
                         in = in + 1;
-            
-            for (auto node : VECTOR_OF_INT)
+                    }
+
+            for (auto node : VECTOR_OF_STRING)
                 if (this->sat(in, "") != "")
-                    if (in <= indexes)
+                    if (in <= indexes) {
                         cout << "    " << node.getValue() << endl;
-                        
-                        in = in + 1;
 
+                        in = in + 1;
+                    }
+            
             print("]");
         }
 };

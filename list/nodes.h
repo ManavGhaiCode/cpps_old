@@ -12,15 +12,21 @@ class nodeInt
 
     public:
 
+        string getType()
+        {
+            return "int";
+        }
+
         nodeInt(int value, int index)
         {
             this->index = index;
             this->value = value;
         }
 
-        void chValue(int nvalue)
+        nodeInt chValue(int nvalue)
         {
             this->value = nvalue;
+            return *this;
         }
 
         int getValue()
@@ -33,46 +39,21 @@ class nodeInt
             return this->index;
         }
 
-};
-
-class nodeStr
-{
-    private:
-
-        int index;
-        string value;
-        int len {0};
-
-    public:
-
-        nodeStr(string value, int index)
+        nodeInt &operator=(const nodeInt &rsh)
         {
-            this->index = index;
-            this->value = value;
-            this->len = value.size();
+            if (this == &rsh)
+                return *this;
+
+            value = 0;
+            int* nval {nullptr};
+
+            *nval = rsh.value; 
+
+            this->chValue(*nval);
+            return *this;
         }
 
-        void chValue(string nvalue)
-        {
-            this->value = nvalue;
-            this->len = nvalue.size();
-        }
-
-        string getValue()
-        {
-            return this->value;
-        }
-
-        int size()
-        {
-            return this->len;
-        }
-
-        int getIndex()
-        {
-            return this->index;
-        }
-
+    friend class list;
 };
 
 class nodeDouble
@@ -81,6 +62,11 @@ class nodeDouble
 
         int index;
         double value; 
+
+        string getType()
+        {
+            return "double";
+        }
 
     public:
 
@@ -105,4 +91,66 @@ class nodeDouble
             return this->index;
         }
 
+    friend class list;
+};
+
+class nodeStr
+{
+    private:
+
+        int index;
+        string value;
+        int len {0};
+
+        string getType()
+        {
+            return "str";
+        }
+
+    public:
+
+        nodeStr(string value, int index)
+        {
+            this->index = index;
+            this->value = value;
+            this->len = value.size();
+        }
+
+        nodeStr chValue(string nvalue)
+        {
+            this->value = nvalue;
+            this->len = nvalue.size();
+            return *this;
+        }
+
+        string getValue()
+        {
+            return this->value;
+        }
+
+        int size()
+        {
+            return this->len;
+        }
+
+        int getIndex()
+        {
+            return this->index;
+        }
+                
+        nodeStr &operator=(const nodeStr &rsh)
+        {
+            if (this == &rsh)
+                return *this;
+
+            value = "";
+            string* nval {nullptr};
+
+            *nval = rsh.value; 
+
+            this->chValue(*nval);
+            return *this;
+        }
+
+    friend class list;
 };

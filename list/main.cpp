@@ -11,6 +11,7 @@ int main()
     myList.add(2);
     myList.add(5.0488);
     myList.add("lol");
+    myList.add(5.0488);
 
     myList.log();
 }
