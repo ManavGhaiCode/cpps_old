@@ -121,11 +121,12 @@ class list
             int in {0};
             print("[");
             for (auto node : VECTOR_OF_INT)
-                if (this->sat(in, 0) != 0)
-                    if (in <= indexes)
+                if (this->sat(in, 0) != 0) 
+                    if (in <= indexes) {
                         cout << "    " << node.getValue() << endl;
 
                         in = in + 1;
+                    }
 
 
             for (auto node : VECTOR_OF_DOUBLE)
