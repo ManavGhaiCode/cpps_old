@@ -43,14 +43,11 @@ class nodeInt
         {
             if (this == &rsh)
                 return *this;
+            else {
+                nodeInt IN {rsh.value, this->index};
+                return IN;
+            }
 
-            value = 0;
-            int* nval {nullptr};
-
-            *nval = rsh.value; 
-
-            this->chValue(*nval);
-            return *this;
         }
 
     friend class list;

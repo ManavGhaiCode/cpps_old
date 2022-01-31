@@ -4,7 +4,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <cctype>
 
 #include "nodes.h"
 #include "../printExtion/print.h"
@@ -146,6 +145,38 @@ class list
                     }
             
             print("]");
+        }
+
+        void chValue(int index, int nval)
+        {
+            // if (!(index <= indexes)) 
+            //     print("Error: No such index found");
+            //     return;
+
+            // for (nodeInt node : VECTOR_OF_INT) {
+            //     if (node.getIndex() == index) {
+            //         if (node.getType() == "int") {
+            //             nodeInt ANode = node.chValue(nval);
+
+            //             VECTOR_OF_INT.at(index) = ANode;
+            //         } else {
+            //             print("Error: nval is not of the same type as the same the node.");
+            //         }
+            //     }
+            // }
+
+            if (index > indexes) {
+                print("Error: No such index found");
+                return;
+            } else {
+                for (nodeInt node : VECTOR_OF_INT) {
+                    if (node.getIndex() == index) {
+                        nodeInt NNode = node.chValue(nval);
+
+                        VECTOR_OF_INT[index].value = NNode.value;
+                    }
+                }
+            }
         }
 };
 
