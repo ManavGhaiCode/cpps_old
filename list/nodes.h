@@ -73,9 +73,10 @@ class nodeDouble
             this->value = value;
         }
 
-        void chValue(double nvalue)
+        nodeDouble chValue(double nvalue)
         {
             this->value = nvalue;
+            return *this;
         }
 
         double getValue()

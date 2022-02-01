@@ -149,22 +149,6 @@ class list
 
         void chValue(int index, int nval)
         {
-            // if (!(index <= indexes)) 
-            //     print("Error: No such index found");
-            //     return;
-
-            // for (nodeInt node : VECTOR_OF_INT) {
-            //     if (node.getIndex() == index) {
-            //         if (node.getType() == "int") {
-            //             nodeInt ANode = node.chValue(nval);
-
-            //             VECTOR_OF_INT.at(index) = ANode;
-            //         } else {
-            //             print("Error: nval is not of the same type as the same the node.");
-            //         }
-            //     }
-            // }
-
             if (index > indexes) {
                 print("Error: No such index found");
                 return;
@@ -174,6 +158,39 @@ class list
                         nodeInt NNode = node.chValue(nval);
 
                         VECTOR_OF_INT[index].value = NNode.value;
+                    }
+                }
+            }
+        }
+
+        void chValue(int index, double nval)
+        {
+            if (index > indexes) {
+                print("Error: No such index found");
+                return;
+            } else {
+                for (nodeDouble node : VECTOR_OF_DOUBLE) {
+                    if (node.getIndex() == index) {
+                        nodeDouble NNode = node.chValue(nval);
+
+                        VECTOR_OF_DOUBLE[index].value = NNode.value;
+                    }
+                }
+            }
+        }
+
+        void chValue(int index, string nval)
+        {
+            if (index > indexes) {
+                print("Error: No such index found");
+                return;
+            } else {
+                for (nodeStr node : VECTOR_OF_STRING) {
+                    if (node.getIndex() == index) {
+                        nodeStr NNode = node.chValue(nval);
+
+                        VECTOR_OF_STRING[index].value = NNode.value;
+                        VECTOR_OF_STRING[index].len = NNode.len;
                     }
                 }
             }

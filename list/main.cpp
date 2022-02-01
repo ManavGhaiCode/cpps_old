@@ -16,9 +16,9 @@ int main()
 
     myList.log();
 
-    print(myList.at(0, 0));
     myList.chValue(0, 987);
-    print(myList.at(0, 0));
+    myList.chValue(2, 200.57834);
+    myList.chValue(3, "lime");
 
     myList.log();
 }
