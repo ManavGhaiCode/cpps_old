@@ -1,3 +1,6 @@
+#ifndef _CHARS_H_
+#define CHARS_H_
+
 #include <iostream>
 #include <string>
 #include "../printExtion/print.h"
@@ -37,3 +40,5 @@ string CompileChar(char c[], int size)
         s = s + c[i];
     }  
 }
+
+#endif
