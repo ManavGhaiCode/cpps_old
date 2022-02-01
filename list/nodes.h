@@ -47,7 +47,6 @@ class nodeInt
                 nodeInt IN {rsh.value, this->index};
                 return IN;
             }
-
         }
 
     friend class list;
@@ -87,6 +86,16 @@ class nodeDouble
         int getIndex()
         {
             return this->index;
+        }
+
+        nodeDouble &operator=(const nodeDouble &rsh)
+        {
+            if (this == &rsh)
+                return *this;
+            else {
+                nodeDouble IN {rsh.value, this->index};
+                return IN;
+            }
         }
 
     friend class list;
@@ -135,19 +144,15 @@ class nodeStr
         {
             return this->index;
         }
-                
+
         nodeStr &operator=(const nodeStr &rsh)
         {
             if (this == &rsh)
                 return *this;
-
-            value = "";
-            string* nval {nullptr};
-
-            *nval = rsh.value; 
-
-            this->chValue(*nval);
-            return *this;
+            else {
+                nodeStr IN {rsh.value, this->index};
+                return IN;
+            }
         }
 
     friend class list;
