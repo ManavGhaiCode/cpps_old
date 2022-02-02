@@ -14,11 +14,6 @@ int main()
     myList.add("lol");
     myList.add(5.0488);
 
-    myList.log();
-
-    myList.chValue(0, 987);
-    myList.chValue(2, 200.57834);
-    myList.chValue(3, "lime");
-
-    myList.log();
+    // cout << myList << endl;
+    cout << myList << endl;
 }
