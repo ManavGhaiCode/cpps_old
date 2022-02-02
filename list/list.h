@@ -1,4 +1,4 @@
-#ifndef _LIST_h_
+#ifndef _LIST_H_
 #define _LIST_H_
 
 #include <iostream>
