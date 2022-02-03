@@ -32,7 +32,7 @@ string* ConvertChar(char **c, int size)
     return rsarr;
 }
 
-string CompileChar(char c[], int size)
+string brew(char c[], int size)
 {
     string s;
     for (int i {0}; i < size; i++)
