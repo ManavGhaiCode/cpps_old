@@ -22,7 +22,7 @@ class list
         int len {0};
         int indexes {0};
 
-        int sat(int index, int type)
+        int sat(int index, int type) const
         {
             for (auto node : VECTOR_OF_INT)
                 if (node.getIndex() == index)
@@ -31,7 +31,7 @@ class list
                 return 0;
         }
 
-        double sat(int index, double type)
+        double sat(int index, double type) const
         {
             for (auto node : VECTOR_OF_DOUBLE)
                 if (node.getIndex() == index)
@@ -40,7 +40,7 @@ class list
                 return 0.00;
         }
 
-        string sat(int index, string type)
+        string sat(int index, string type) const
         {
             for (auto node : VECTOR_OF_STRING)
                 if (node.getIndex() == index)
@@ -115,7 +115,7 @@ class list
                 return "";
         }
 
-        void log()
+        void log() const
         {
             int in {0};
             print("[");
@@ -195,6 +195,13 @@ class list
                 }
             }
         }
+
+        friend ostream &operator<<(ostream &out, const list &olist);
 };
+
+ostream &operator<<(ostream &out, const list &olist) {
+    olist.log();
+    return out;
+}
 
 #endif
