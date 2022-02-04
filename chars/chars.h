@@ -1,5 +1,5 @@
 #ifndef _CHARS_H_
-#define CHARS_H_
+#define _CHARS_H_
 
 #include <iostream>
 #include <string>
