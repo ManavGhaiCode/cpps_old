@@ -232,6 +232,38 @@ class Math
 
             return rnum;
         }
+
+        double tax(int n2t) {
+            int tr1 = 250001;
+            int tr2 = 500001;
+            int tr3 = 750001;
+
+            if (n2t < tr1) {
+                return n2t;
+            } else if (n2t >= tr1 and n2t < tr2) {
+                return n2t * 5 / 100;
+            } else if (n2t >= tr2 and n2t < tr3) {
+                return n2t * 10 / 100;
+            } else {
+                return n2t * 15 / 100;
+            }
+        }
+
+        double tax(double n2t) {
+            double tr1 = 250001.00;
+            double tr2 = 500001.00;
+            double tr3 = 750001.00;
+
+            if (n2t < tr1) {
+                return n2t;
+            } else if (n2t >= tr1 and n2t < tr2) {
+                return n2t * 5 / 100;
+            } else if (n2t >= tr2 and n2t < tr3) {
+                return n2t * 10 / 100;
+            } else {
+                return n2t * 15 / 100;
+            }
+        }
 };
 
 int Math::num_math {0};
