@@ -1,3 +1,6 @@
+#ifndef _INPUT_H_
+#define _INPUT_H_
+
 #include <iostream>
 #include <string>
 
@@ -10,3 +13,5 @@ string input(string inputStr)
     cin >> userInputStr;
     return userInputStr;
 }
+
+#endif
