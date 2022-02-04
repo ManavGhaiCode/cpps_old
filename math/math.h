@@ -4,17 +4,17 @@
 
 using namespace std;
 
-class Math
+class math
 {
     private:
         static int num_math;
         static bool get_num_math() { if (num_math >= 1) { return false; } else { return true; }}
     public:
-        Math()
+        math()
         {
             if (!this->get_num_math())
             {
-                cout << "ERROR cannot make another Math obj." << endl;
+                cout << "ERROR cannot make another math obj." << endl;
             }
             num_math = num_math + 1;
         }
@@ -266,5 +266,5 @@ class Math
         }
 };
 
-int Math::num_math {0};
-Math math;
+int math::num_math {0};
+math Math;
