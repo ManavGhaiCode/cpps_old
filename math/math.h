@@ -264,6 +264,22 @@ class math
                 return n2t * 15 / 100;
             }
         }
+
+        int square(int n2s) {
+            return n2s * n2s;
+        }
+
+        double square(double n2s) {
+            return n2s * n2s;
+        }
+
+        int cube(int n2c) {
+            return n2c * n2c * n2c;
+        }
+
+        double cube(double n2c) {
+            return n2c * n2c * n2c;
+        }
 };
 
 int math::num_math {0};
