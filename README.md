@@ -1,5 +1,5 @@
 # cpps
-cpps is a a library for c++ which adds abstractions like print functions, input functions, Consoles like Consoles in JS but much better, a dev only terminal, etc. plz see the danger area before doing some thing you don't understand. 
+cpps is a a library for c++ which adds abstractions like print functions, input functions, Consoles like Consoles in JS but much better, a dev only terminal, etc. plz see the danger area before doing some thing you don't understand. To get all the extions include the header file in "/path/to/cpps/cpps.h"
 
 ## Extions
 
