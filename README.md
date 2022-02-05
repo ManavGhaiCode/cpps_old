@@ -1,7 +1,7 @@
 # cpps
 cpps is a a library for c++ which adds abstractions like print functions, input functions, Consoles like Consoles in JS but much better, a dev only terminal, etc. plz see the danger area before doing some thing you don't understand. 
 
-# Extions
+## Extions
 
 1. Print
 
@@ -43,15 +43,50 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
 
 5. char-add-ons
 
-    **decription** - this file live in "*/chars/chars.h" the file has 2 functions for array of chars called **ConsvertChar**, **CompileChar** both take in **2 things** the array of chars itself and the size of the array.
+    **decription** - this file live in "*/chars/chars.h" the file has 2 functions for array of chars called **ConsvertChar**, **brew** both take in **2 things** the array of chars itself and the size of the array.
 
     **what does ConsvertChar do?** - it returns an array of strings based on the array that you pass in.
 
-    **what does CompileChar do?** - it compiles a array of chars to a single string.
+    **what does brew do?** - it compiles a array of chars to a single string.
 
     **how ConsvertChar works?** - it takes in a array of chars and loops over that array add the char at that point to the string in the return-array, if the char at the point of the array in " " then we make a new string in the return-array.
 
-# DANGER!
+6. list
+
+    **decription** - It is my take on arrays because i find that c++ arrays are not good and vectors don't store more than one type of nodes but I am use JS in JS you can store all types of nodes I want c++ to be more easy so I tryed to make arrays hold more type of nodes than 1.
+
+    **Waht function to use?** - there are 4 functions to use there are - 
+        "add" - It add node to the list.
+
+        "at" - It gets a node's value at a index.
+
+        "log" - It can be used to get the values in the list you can also use cout with this class.
+
+        "chValue" - chValue stands for change value it is use to change the value.
+
+    I am trying to put more features in the list class.
+
+    Try this code to test the class -
+
+        ```c++
+        #include <iostream>
+
+        #include "./list/list.h"
+
+        int main() {
+            list li;
+
+            li.add("hi boiii");
+            li.add(47.99);
+            li.add(99);
+
+            li.log();
+
+            std::cout << li << std::endl;
+        }
+        ```
+
+## DANGER!
 
 1. infinity Consoles - if we run the following code it can cause in infinity consoles and a blue screen of death on Windows. Note plz dont run the following code.
 
@@ -71,7 +106,7 @@ Console conmain {lolInfinity};
 
 In the following code it looks like only 2 console are created but if you think about the lolInfinity is a recursive function you make a console which makes console and the console which was made also makes consoles and so on. 🌋🌋🌋 no more ram left ):
 
-# Install
+## Install
 
 to install the repo choose one release -
 
@@ -79,6 +114,6 @@ to install the repo choose one release -
 
 and get the zip verson and unzip it.
 
-# SORRY
+## SORRY
 
 I would like to SORRY because of the 5 typos history.
