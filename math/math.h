@@ -280,6 +280,14 @@ class math
         double cube(double n2c) {
             return n2c * n2c * n2c;
         }
+
+        double percent(int n2m, int n2mtn) {
+            return n2m * n2mtn / 100;
+        }
+
+        double percent(double n2m, double n2mtn) {
+            return n2m * n2mtn / 100;
+        }
 };
 
 int math::num_math {0};
