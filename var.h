@@ -1,3 +1,6 @@
+#ifndef _CPPS_VARS_H_
+#define _CPPS_VARS_H_
+
 #include <iostream>
 #include <string>
 
@@ -44,3 +47,5 @@ string lol = brew(ArrBrewLOL, 3);
 string BrewLOL(char var) {
     return lol + var;
 }
+
+#endif
