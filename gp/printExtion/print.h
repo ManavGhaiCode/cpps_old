@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 
+#include "../../vars.h"
+
 using namespace std;
 
 void print(int var) 
@@ -60,10 +62,10 @@ void print(vector<double> var)
 
 void print(vector<string> var)
 {
-    cout << "(" << endl;
+    cout << Brew9 << endl;
     for (auto s : var)
         cout << s << endl;
-    cout << ")" << endl;
+    cout << Brew0 << endl;
 }
 
 void print(vector<char> var)
