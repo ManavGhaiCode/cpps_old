@@ -7,6 +7,7 @@
 #include <functional>
 
 #include "../vars.h"
+#include "./vars.h"
 
 using namespace std;
 
@@ -34,13 +35,13 @@ public:
 
     void run()
     {
-        cout << "Console - "
+        cout << console << ' ' << '-' << ' '
              << '\n'
              << endl;
         string arr[3];
-        arr[0] = BrewLOL('\0');
-        arr[1] = BrewLOL('2');
-        arr[2] = BrewLOL('3');
+        arr[0] = lol;
+        arr[1] = lol2;
+        arr[2] = lol3;
 
         func_main(arr);
         cout << endl;
