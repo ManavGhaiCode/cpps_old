@@ -48,4 +48,9 @@ string BrewLOL(char var) {
     return lol + var;
 }
 
+// Hellow World function
+
+char ArrBrewHW[11] {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd'};
+string HW = brew(ArrBrewHW);
+
 #endif
