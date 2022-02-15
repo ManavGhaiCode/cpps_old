@@ -34,9 +34,8 @@ string BrewSStr = brew(sstr, 1);
 
 string estr()
 {
-    string s = '\0';
-
-    return s;
+    char es[1]{'\0'};
+    return brew(es, 1);
 }
 
 // lol's
