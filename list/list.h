@@ -80,7 +80,7 @@ public:
         indexes = indexes + 1;
     }
 
-    int at(int index, int type)
+    int at(int index, int type) const
     {
         for (auto node : VECTOR_OF_INT)
             if (node.getIndex() == index)
@@ -90,7 +90,7 @@ public:
         return 0;
     }
 
-    double at(int index, double type)
+    double at(int index, double type) const
     {
         for (auto node : VECTOR_OF_DOUBLE)
             if (node.getIndex() == index)
@@ -100,7 +100,7 @@ public:
         return 0.00;
     }
 
-    string at(int index, string type)
+    string at(int index, string type) const
     {
         for (auto node : VECTOR_OF_STRING)
             if (node.getIndex() == index)
