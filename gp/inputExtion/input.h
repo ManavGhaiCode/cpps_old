@@ -9,7 +9,7 @@ using namespace std;
 string input(string inputStr)
 {
     string userInputStr;
-    cout << inputStr << endl;
+    cout << inputStr;
     cin >> userInputStr;
     return userInputStr;
 }
