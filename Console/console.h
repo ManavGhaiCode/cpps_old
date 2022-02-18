@@ -8,18 +8,21 @@
 
 #include "../vars.h"
 #include "./vars.h"
+#include "../chars/chars.h"
 
 using namespace std;
+
+vector<string> mainArgs{};
 
 class Console
 {
 private:
-    function<int(string[])> func_main = [](string args[]) -> int
+    function<int(vector<string>)> func_main = [](vector<string>) -> int
     {
         cout << HW << endl;
         return 0;
     };
-    void change_FM(function<int(string[])> func) { func_main = func; }
+    void change_FM(function<int(vector<string>)> func) { func_main = func; }
 
 public:
     Console()
@@ -27,7 +30,7 @@ public:
         this->run();
     }
 
-    Console(function<int(string[])> func)
+    Console(function<int(vector<string>)> func)
     {
         change_FM(func);
         this->run();
@@ -38,18 +41,16 @@ public:
         cout << console << ' ' << '-' << ' '
              << '\n'
              << endl;
-        string arr[3];
-        arr[0] = lol;
-        arr[1] = lol2;
-        arr[2] = lol3;
 
-        func_main(arr);
+        func_main(mainArgs);
         cout << endl;
     }
 };
 
-int main()
+int main(char **args, int size)
 {
+    vector<string> cArgs = ConvertChar(args, size);
+
     return 0;
 }
 

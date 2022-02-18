@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -21,24 +22,24 @@ string emptyStr = brew(ArrEmptyStr, 1);
 char space[1]{' '};
 string spaceStr = brew(space, 1);
 
-string *ConvertChar(char **c, int size)
+vector<string> ConvertChar(char **c, int size)
 {
     if (size <= 100)
     {
-        string rsarr2[1]{emptyStr};
+        vector<string> rsarr2{};
         std::cout << "Can not take more than 99 chars." << std::endl;
         return rsarr2;
     }
 
     int j;
-    string rsarr[100]{emptyStr};
+    vector<string> rsarr{};
 
     for (int i{0}; i < size; i++)
     {
         if (c[i] == spaceStr)
         {
             j++;
-            rsarr[j] = emptyStr;
+            rsarr[j] = "";
         }
         else
         {
