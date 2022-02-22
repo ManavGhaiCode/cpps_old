@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void print(int var) 
+void print(int var)
 {
     cout << var << endl;
 }
@@ -19,7 +19,7 @@ void print(double var)
     cout << var << endl;
 }
 
-void print(string var) 
+void print(string var)
 {
     cout << var << endl;
 }
@@ -29,7 +29,8 @@ void print(char var)
     cout << var << endl;
 }
 
-void print(int var[]) {
+void print(int var[])
+{
     cout << var << endl;
 }
 
@@ -50,22 +51,32 @@ void print(char var[])
 
 void print(vector<int> var)
 {
+    cout << "[ ";
+
     for (auto s : var)
-        cout << s << endl;
+        cout << s << ", ";
+
+    cout << " ]" << endl;
 }
 
 void print(vector<double> var)
 {
+    cout << "[ ";
+
     for (auto s : var)
-        cout << s << endl;
+        cout << s << ", ";
+
+    cout << " ]" << endl;
 }
 
 void print(vector<string> var)
 {
-    cout << Brew9 << endl;
+    cout << "[ ";
+
     for (auto s : var)
-        cout << s << endl;
-    cout << Brew0 << endl;
+        cout << s << ", ";
+
+    cout << " ]" << endl;
 }
 
 void print(vector<char> var)

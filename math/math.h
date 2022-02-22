@@ -290,6 +290,26 @@ public:
         }
     }
 
+    vector<int> tax(vector<int> n2t)
+    {
+        vector<int> RV{};
+
+        for (int nn2t : n2t)
+            RV.push_back(tax(nn2t));
+
+        return RV;
+    }
+
+    vector<double> tax(vector<double> n2t)
+    {
+        vector<double> RV{};
+
+        for (double nn2t : n2t)
+            RV.push_back(tax(nn2t));
+
+        return RV;
+    }
+
     int square(int n2s)
     {
         return n2s * n2s;
