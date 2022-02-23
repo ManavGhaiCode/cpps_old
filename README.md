@@ -97,7 +97,7 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
     }
     ```
 
-    "log" - It can be used to get the values in the list youcan also use cout with this class.
+    "log" - It can be used to get the values in the list you can also use cout with this class.
 
     e.g. - 
 
