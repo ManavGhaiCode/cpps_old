@@ -56,35 +56,36 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
     **decription** - It is my take on arrays because i find that c++ arrays are not good and vectors don't store more than one type of nodes but I am use JS in JS you can store all types of nodes I want c++ to be more easy so I tryed to make arrays hold more type of nodes than 1.
 
     **Waht function to use?** - there are 4 functions to use there are - 
-        "add" - It add node to the list.
 
-        "at" - It gets a node's value at a index.
+    "add" - It add node to the list.
 
-        "log" - It can be used to get the values in the list you can also use cout with this class.
+    "at" - It gets a node's value at a index.
 
-        "chValue" - chValue stands for change value it is use to change the value.
+    "log" - It can be used to get the values in the list youcan also use cout with this class.
+
+    "chValue" - chValue stands for change value it is use tochange the value.
 
     I am trying to put more features in the list class.
 
     Try this code to test the class -
 
-        ```c++
-        #include <iostream>
+    ```c++
+    #include <iostream>
 
-        #include "./list/list.h"
+    #include "./list/list.h"
 
-        int main() {
-            list li;
+    int main() {
+        list li;
 
-            li.add("hi boiii");
-            li.add(47.99);
-            li.add(99);
+        li.add("hi boiii");
+        li.add(47.99);
+        li.add(99);
 
-            li.log();
+        li.log();
 
-            std::cout << li << std::endl;
-        }
-        ```
+        std::cout << li << std::endl;
+    }
+    ```
 
 ## DANGER!
 
