@@ -59,11 +59,84 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
 
     "add" - It add node to the list.
 
+    e.g. - 
+
+    ```c++
+    #include <iostream>
+
+    #include "./list/list.h"
+
+    int main() {
+        list li;
+
+        li.add("hi boiii");
+        li.add(47.99);
+        li.add(99);
+
+        li.log();
+    }
+    ```
+
     "at" - It gets a node's value at a index.
+
+    e.g. - 
+
+    ```c++
+    #include <iostream>
+
+    #include "./list/list.h"
+
+    int main() {
+        list li;
+
+        li.add("hi boiii");
+        li.add(47.99);
+        li.add(99);
+
+        li.at(0, "");
+    }
+    ```
 
     "log" - It can be used to get the values in the list youcan also use cout with this class.
 
+    e.g. - 
+
+    ```c++
+    #include <iostream>
+
+    #include "./list/list.h"
+
+    int main() {
+        list li;
+
+        li.add("hi boiii");
+        li.add(47.99);
+        li.add(99);
+
+        li.log();
+    }
+    ```
+
     "chValue" - chValue stands for change value it is use tochange the value.
+
+    .e.g -
+
+    ```c++
+    #include <iostream>
+
+    #include "./list/list.h"
+
+    int main() {
+        list li;
+
+        li.add("hi boiii");
+        li.add(47.99);
+        li.add(99);
+
+        li.chValue(2, 888);
+        li.log();
+    }
+    ```
 
     I am trying to put more features in the list class.
 
