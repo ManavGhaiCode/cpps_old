@@ -290,9 +290,9 @@ public:
         }
     }
 
-    vector<int> tax(vector<int> n2t)
+    vector<double> tax(vector<int> n2t)
     {
-        vector<int> RV{};
+        vector<double> RV{};
 
         for (int nn2t : n2t)
             RV.push_back(tax(nn2t));
