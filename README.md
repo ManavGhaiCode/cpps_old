@@ -160,6 +160,12 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
     }
     ```
 
+## Install
+
+to install the repo choose one release -
+
+[1.2.0](https://github.com/ManavGhaiCode/cpps/releases/tag/1.2.0)
+
 ## DANGER!
 
 1. infinity Consoles - if we run the following code it can cause in infinity consoles and a blue screen of death on Windows. Note plz dont run the following code.
@@ -180,11 +186,6 @@ Console conmain {lolInfinity};
 
 In the following code it looks like only 2 console are created but if you think about the lolInfinity is a recursive function you make a console which makes console and the console which was made also makes consoles and so on. 🌋🌋🌋 no more ram left ):
 
-## Install
-
-to install the repo choose one release -
-
-[1.2.0](https://github.com/ManavGhaiCode/cpps/releases/tag/1.2.0)
 
 and get the zip verson and unzip it.
 
