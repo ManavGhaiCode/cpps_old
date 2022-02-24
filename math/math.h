@@ -28,6 +28,8 @@ public:
         num_math = num_math + 1;
     }
 
+    double PI = 3.14159265358979323846264338327950288419716939937510;
+
     // add methords
 
     // base add functions
