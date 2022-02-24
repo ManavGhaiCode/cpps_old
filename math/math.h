@@ -322,6 +322,26 @@ public:
         return n2s * n2s;
     }
 
+    vector<int> square(vector<int> n2s)
+    {
+        vector<int> sn;
+
+        for (int nn2s : n2s)
+            sn.push_back(square(nn2s));
+
+        return sn;
+    }
+
+    vector<double> square(vector<double> n2s)
+    {
+        vector<double> sn;
+
+        for (double nn2s : n2s)
+            sn.push_back(square(nn2s));
+
+        return sn;
+    }
+
     int cube(int n2c)
     {
         return n2c * n2c * n2c;
@@ -330,6 +350,26 @@ public:
     double cube(double n2c)
     {
         return n2c * n2c * n2c;
+    }
+
+    vector<int> cube(vector<int> n2c)
+    {
+        vector<int> sn;
+
+        for (int nn2c : n2c)
+            sn.push_back(square(nn2c));
+
+        return sn;
+    }
+
+    vector<double> cube(vector<double> n2c)
+    {
+        vector<double> sn;
+
+        for (double nn2c : n2c)
+            sn.push_back(square(nn2c));
+
+        return sn;
     }
 
     double percent(int n2m, int n2mtn)
