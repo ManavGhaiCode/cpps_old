@@ -3,7 +3,6 @@
 
 #include "../vars.h"
 
-string lol = BrewLOL('\0');
 string lol2 = BrewLOL('2');
 string lol3 = BrewLOL('3');
 
