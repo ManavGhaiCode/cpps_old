@@ -7,3 +7,7 @@ char CNFN[19]{'C', 'a', 'n', 'n', 'o', 't', ' ', 'f', 'i', 'n', 'd', ' ', 'a', '
 
 char ArrBrewTab[4]{' ', ' ', ' ', ' '};
 string tab = brew(ArrBrewTab, 4);
+
+int i = 0;
+double d = 0.00;
+string s = "";
