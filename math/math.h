@@ -7,27 +7,8 @@
 
 using namespace std;
 
-class math
+namespace Math
 {
-private:
-    static int num_math;
-    static bool get_num_math()
-    {
-        if (num_math >= 1)
-            return false;
-        return true;
-    }
-
-public:
-    math()
-    {
-        if (!this->get_num_math())
-        {
-            cout << BrewERROR(CNMAMO, 29) << endl;
-        }
-        num_math = num_math + 1;
-    }
-
     double PI = 3.14159265358979323846264338327950288419716939937510;
 
     // add methords
@@ -36,7 +17,7 @@ public:
 
     int add(int n1, int n2)
     {
-        return n1 * n2;
+        return n1 + n2;
     }
 
     double add(double n1, double n2)
@@ -382,6 +363,3 @@ public:
         return n2m * n2mtn / 100;
     }
 };
-
-int math::num_math{0};
-math Math;
