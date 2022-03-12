@@ -113,12 +113,12 @@ public:
     void log() const
     {
         int in{0};
-        print("[");
+        cout << "[ ";
         for (auto node : VECTOR_OF_INT)
             if (this->sat(in, 0) != 0)
                 if (in <= indexes)
                 {
-                    cout << tab << node.getValue() << endl;
+                    cout << node.getValue() << ", ";
 
                     in = in + 1;
                 }
@@ -127,7 +127,7 @@ public:
             if (this->sat(in, 0.00) != 0.00)
                 if (in <= indexes)
                 {
-                    cout << tab << node.getValue() << endl;
+                    cout << node.getValue() << ", ";
 
                     in = in + 1;
                 }
@@ -136,7 +136,7 @@ public:
             if (this->sat(in, "") != "")
                 if (in <= indexes)
                 {
-                    cout << tab << node.getValue() << endl;
+                    cout << node.getValue() << ", ";
 
                     in = in + 1;
                 }
