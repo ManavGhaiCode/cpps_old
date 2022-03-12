@@ -56,7 +56,7 @@ void print(vector<int> var)
     for (auto s : var)
         cout << s << ", ";
 
-    cout << " ]" << endl;
+    cout << "]" << endl;
 }
 
 void print(vector<double> var)
@@ -66,7 +66,7 @@ void print(vector<double> var)
     for (auto s : var)
         cout << s << ", ";
 
-    cout << " ]" << endl;
+    cout << "]" << endl;
 }
 
 void print(vector<string> var)
@@ -76,13 +76,17 @@ void print(vector<string> var)
     for (auto s : var)
         cout << s << ", ";
 
-    cout << " ]" << endl;
+    cout << "]" << endl;
 }
 
 void print(vector<char> var)
 {
+    cout << "[ ";
+
     for (auto s : var)
-        cout << s << endl;
+        cout << s << ", ";
+
+    cout << "]" << endl;
 }
 
 #endif
