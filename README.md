@@ -184,11 +184,13 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
 
 to install the repo choose one release -
 
-[1.2.0](https://github.com/ManavGhaiCode/cpps/releases/tag/1.2.0)
+[1.3.2-patch](https://github.com/ManavGhaiCode/cpps/releases/tag/1.3.2-patch)
+
+[1.3.2](https://github.com/ManavGhaiCode/cpps/releases/tag/1.3.2)
 
 [1.3.1](https://github.com/ManavGhaiCode/cpps/releases/tag/1.3.1)
 
-[1.3.2](https://github.com/ManavGhaiCode/cpps/releases/tag/1.3.2)
+[1.2.0](https://github.com/ManavGhaiCode/cpps/releases/tag/1.2.0)
 
 ## DANGER!
 
