@@ -39,7 +39,25 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
 
 4. math
 
-    **decription** - math is a very simple object with 6 functions add, subtract, multiple, divide, Floor, Ceil, tax square, cube, percent. You shold have under-stood what the functions do.
+    **decription** - math is a very simple namespace with 6 functions add, subtract, multiple, divide, Floor, Ceil, tax square, cube, percent. You shold have under-stood what the functions do.
+
+    **eg** - 
+
+    ```c++
+    #include <iostream>
+
+    #include "path/to/cpps/cpps.h"
+
+    int func(string[]) 
+    {
+        print(Math::add(1, 78));
+        print(Math::add(1.745, 78.9475));
+
+        print(Math::tax(70000078834));
+    }
+
+    Console con{func};
+    ```
 
 5. char-add-ons
 
