@@ -7,7 +7,10 @@
 
 #include "../../vars.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
+using std::string;
+using std::vector;
 
 void print(int var)
 {
@@ -87,6 +90,158 @@ void print(vector<char> var)
         cout << s << ", ";
 
     cout << "]" << endl;
+}
+
+void print(int var, bool opt)
+{
+    if (opt == true)
+        cout << var << endl;
+    else
+        cout << var;
+}
+
+void print(double var, bool opt)
+{
+    if (opt == true)
+        cout << var << endl;
+    else
+        cout << var;
+}
+
+void print(string var, bool opt)
+{
+    if (opt == true)
+        cout << var << endl;
+    else
+        cout << var;
+}
+
+void print(char var, bool opt)
+{
+    if (opt == true)
+        cout << var << endl;
+    else
+        cout << var;
+}
+
+void print(int var[], bool opt)
+{
+    if (opt == true)
+        cout << var << endl;
+    else
+        cout << var;
+}
+
+void print(double var[], bool opt)
+{
+    if (opt == true)
+        cout << var << endl;
+    else
+        cout << var;
+}
+
+void print(string var[], bool opt)
+{
+    if (opt == true)
+        cout << var << endl;
+    else
+        cout << var;
+}
+
+void print(char var[], bool opt)
+{
+    if (opt == true)
+        cout << var << endl;
+    else
+        cout << var;
+}
+
+void print(vector<int> var, bool opt)
+{
+    if (opt == true)
+    {
+        cout << "[ ";
+
+        for (auto s : var)
+            cout << s << ", ";
+
+        cout << "]" << endl;
+    }
+    else
+    {
+        cout << "[ ";
+
+        for (auto s : var)
+            cout << s << ", ";
+
+        cout << "]";
+    }
+}
+
+void print(vector<double> var, bool opt)
+{
+    if (opt == true)
+    {
+        cout << "[ ";
+
+        for (auto s : var)
+            cout << s << ", ";
+
+        cout << "]" << endl;
+    }
+    else
+    {
+        cout << "[ ";
+
+        for (auto s : var)
+            cout << s << ", ";
+
+        cout << "]";
+    }
+}
+
+void print(vector<string> var, bool opt)
+{
+    if (opt == true)
+    {
+        cout << "[ ";
+
+        for (auto s : var)
+            cout << s << ", ";
+
+        cout << "]" << endl;
+    }
+    else
+    {
+        cout << "[ ";
+
+        for (auto s : var)
+            cout << s << ", ";
+
+        cout << "]";
+    }
+}
+
+void print(vector<char> var, bool opt)
+{
+    if (opt == true)
+    {
+        cout << "[ ";
+
+        for (auto s : var)
+            cout << s << ", ";
+
+        cout << "]" << endl;
+    }
+    else
+    {
+        cout << "[ ";
+
+        for (auto s : var)
+            cout << s << ", ";
+
+        cout << "]";
+    }
 }
 
 #endif
