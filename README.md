@@ -93,7 +93,7 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
         li.add(47.99);
         li.add(99);
 
-        li.at(0, "");
+        li.at(0, s);
     }
     ```
 
@@ -159,6 +159,8 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
         std::cout << li << std::endl;
     }
     ```
+
+    **What are the vars "i", "d", "s" ?** - **"i"**, **"d"**, **"s"** are special var which allow you to access a value at an index in a list.
 
 ## Install
 
