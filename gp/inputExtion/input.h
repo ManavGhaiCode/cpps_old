@@ -8,10 +8,19 @@ using namespace std;
 
 string input(string inputStr)
 {
-    string userInputStr;
+    string usrtInput;
     cout << inputStr;
-    cin >> userInputStr;
-    return userInputStr;
+    cin >> usrtInput;
+    return usrtInput;
+}
+
+double outDloubleInput(string inputStr)
+{
+    double usrtInput;
+    cout << inputStr;
+    cin >> usrtInput;
+
+    return usrtInput;
 }
 
 #endif
