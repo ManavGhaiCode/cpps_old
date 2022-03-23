@@ -13,6 +13,8 @@ string brew(char c[], int size)
     {
         s = s + c[i];
     }
+
+    return s;
 }
 
 char ArrEmptyStr[1]{'\0'};
