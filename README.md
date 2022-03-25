@@ -37,6 +37,8 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
     Console con {lol};
     ```
 
+    ***message*** - You may have see the "**munmap_chunk(): Ivalid pointer**" bug while using consoles I didn't use this function anywhere I can't do anything about this 'cause I didn't use this use it. If you find why it is this happening plz make a pull request on the repo.
+
 4. math
 
     **decription** - math is a very simple namespace with 6 functions add, subtract, multiple, divide, Floor, Ceil, tax square, cube, percent. You shold have under-stood what the functions do.
