@@ -128,6 +128,30 @@ class list {
 
             std::cout << "]" << std::endl;
         }
+
+        void ch_value(int value, int index) {
+            for (nodeInt node : vector_of_ints)
+                if (node.index == index)
+                    vector_of_ints[node.vect_index].value = value;
+        }
+
+        void ch_value(double value, int index) {
+            for (nodeDouble node : vector_of_doubles)
+                if (node.index == index)
+                    vector_of_doubles[node.vect_index].value = value;
+        }
+
+        void ch_value(std::string value, int index) {
+            for (nodeString node : vector_of_strings)
+                if (node.index == index)
+                    vector_of_strings[node.vect_index].value = value;
+        }
+
+        void ch_value(char value, int index) {
+            for (nodeChar node : vector_of_chars)
+                if (node.index == index)
+                    vector_of_chars[node.vect_index].value = value;
+        }
 };
 
 #endif
