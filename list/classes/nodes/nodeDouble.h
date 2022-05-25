@@ -14,4 +14,6 @@ class nodeDouble {
 
             this->value = value;
         }
+
+    friend class list;
 };
