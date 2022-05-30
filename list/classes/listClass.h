@@ -17,7 +17,23 @@ class list {
         std::vector<nodeString> vector_of_strings;
         std::vector<nodeChar> vector_of_chars;
 
+        void Dindexes(int index) {
+            for (nodeInt node : vector_of_ints)
+                if (node.index > index)
+                    vector_of_ints[node.vect_index].index = index - 1;
 
+            for (nodeDouble node : vector_of_doubles)
+                if (node.index > index)
+                    vector_of_doubles[node.vect_index].index = index - 1;
+
+            for (nodeString node : vector_of_strings)
+                if (node.index > index)
+                    vector_of_strings[node.vect_index].index = index - 1;
+
+            for (nodeChar node : vector_of_chars)
+                if (node.index > index)
+                    vector_of_chars[node.vect_index].index = index - 1;
+        }
     public:
         void push(int val) {
             nodeInt new_node { ( indexes + 1 ), vector_of_ints.size(), val };
@@ -107,7 +123,7 @@ class list {
                 }
             } else {
                 std::cout << "No value at index: " << index << " was found" << std::endl;
-                return '\0';
+                return '-';
             }
         }
 
@@ -168,8 +184,17 @@ class list {
 
             for (nodeChar node : vector_of_chars)
                 if (node.index == index)
-                    vector_of_chars.erase((vector_of_chars.begin() + node.vect_index));       
+                    vector_of_chars.erase((vector_of_chars.begin() + node.vect_index));
+
+            len = len - 1;
+            indexes = indexes - 1;
+
+            Dindexes(index);
         }
+
+        int get_len() {
+            return len;
+        } 
 };
 
 #endif
