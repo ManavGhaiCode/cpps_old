@@ -62,7 +62,7 @@ class list {
         int at(int index, int type) {
             if (index <= indexes) {
                 for (int i = 0; i < vector_of_ints.size(); i = i + 1) {
-                    if (vector_of_ints.at(i).index = index) {
+                    if (vector_of_ints.at(i).index == index) {
                         return vector_of_ints.at(i).value;
                     }
                 }
@@ -75,7 +75,7 @@ class list {
         double at(int index, double type) {
             if (index <= indexes) {
                 for (int i = 0; i < vector_of_doubles.size(); i = i + 1) {
-                    if (vector_of_doubles.at(i).index = index) {
+                    if (vector_of_doubles.at(i).index == index) {
                         return vector_of_doubles.at(i).value;
                     }
                 }
@@ -88,7 +88,7 @@ class list {
         std::string at(int index, std::string type) {
             if (index <= indexes) {
                 for (int i = 0; i < vector_of_strings.size(); i = i + 1) {
-                    if (vector_of_strings.at(i).index = index) {
+                    if (vector_of_strings.at(i).index == index) {
                         return vector_of_strings.at(i).value;
                     }
                 }
@@ -101,7 +101,7 @@ class list {
         char at(int index, char type) {
             if (index <= indexes) {
                 for (int i = 0; i < vector_of_chars.size(); i = i + 1) {
-                    if (vector_of_chars.at(i).index = index) {
+                    if (vector_of_chars.at(i).index == index) {
                         return vector_of_chars.at(i).value;
                     }
                 }
@@ -151,6 +151,24 @@ class list {
             for (nodeChar node : vector_of_chars)
                 if (node.index == index)
                     vector_of_chars[node.vect_index].value = value;
+        }
+
+        void remove(int index) {
+            for (nodeInt node : vector_of_ints)
+                if (node.index == index)
+                    vector_of_ints.erase((vector_of_ints.begin() + node.vect_index));
+
+            for (nodeDouble node : vector_of_doubles)
+                if (node.index == index)
+                    vector_of_doubles.erase((vector_of_doubles.begin() + node.vect_index));
+
+            for (nodeString node : vector_of_strings)
+                if (node.index == index)
+                    vector_of_strings.erase((vector_of_strings.begin() + node.vect_index));
+
+            for (nodeChar node : vector_of_chars)
+                if (node.index == index)
+                    vector_of_chars.erase((vector_of_chars.begin() + node.vect_index));       
         }
 };
 
