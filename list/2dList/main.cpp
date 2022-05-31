@@ -24,5 +24,14 @@ int main() {
 
     li2d.at(0).log();
 
+    li2d.remove(1);
+    li2d.remove(0);
+
+    li2d.log();
+
+    li2d.push(li1);
+
+    li2d.log();
+
     return 0;
 }

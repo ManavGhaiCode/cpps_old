@@ -52,6 +52,18 @@ class list2D {
 
             std::cout << "]" << std::endl;
         }
+
+        void remove(int index) {
+            int i = 0;
+
+            for (list li : vector_of_lists) {
+                if (i == index) {
+                    vector_of_lists.erase((vector_of_lists.begin() + i));
+                }
+
+                i = i + 1;
+            }  
+        }
 };
 
 #endif
