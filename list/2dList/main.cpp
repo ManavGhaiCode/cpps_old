@@ -30,7 +30,8 @@ int main() {
     li2d.log();
 
     li2d.push(li1);
-
+    li2d.log();
+    li2d.pop();
     li2d.log();
 
     return 0;

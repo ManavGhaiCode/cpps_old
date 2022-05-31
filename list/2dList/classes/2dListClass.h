@@ -10,8 +10,8 @@
 
 class list2D {
     private:
-        int len;
-        int indexes;
+        int len = 0;
+        int indexes = -1;
 
         std::vector<list> vector_of_lists;
 
@@ -62,7 +62,14 @@ class list2D {
                 }
 
                 i = i + 1;
-            }  
+            }
+
+            len = len - 1;
+            indexes = indexes - 1;
+        }
+
+        void pop() {
+            this->remove(indexes);
         }
 };
 
