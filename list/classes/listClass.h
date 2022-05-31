@@ -192,9 +192,13 @@ class list {
             Dindexes(index);
         }
 
+        void pop() {
+            this->remove(indexes);
+        }
+
         int get_len() {
             return len;
-        } 
+        }
 };
 
 #endif
