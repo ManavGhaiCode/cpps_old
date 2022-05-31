@@ -127,7 +127,7 @@ class list {
             }
         }
 
-        void log() {
+        void log() const {
             std::cout << "[ ";
 
             for (auto node : vector_of_ints)
@@ -199,6 +199,13 @@ class list {
         int get_len() {
             return len;
         }
+
+        friend std::ostream& operator<<(std::ostream& os,  const list& rhs);
 };
+
+std::ostream& operator<<(std::ostream& os, const list& rhs) {
+    rhs.log();
+    return os;
+}
 
 #endif
