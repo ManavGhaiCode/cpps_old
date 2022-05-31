@@ -75,7 +75,7 @@ class list {
             return;
         }
 
-        int at(int index, int type) {
+        int at(int index, int type) const  {
             if (index <= indexes) {
                 for (int i = 0; i < vector_of_ints.size(); i = i + 1) {
                     if (vector_of_ints.at(i).index == index) {
@@ -88,7 +88,7 @@ class list {
             }
         }
 
-        double at(int index, double type) {
+        double at(int index, double type) const  {
             if (index <= indexes) {
                 for (int i = 0; i < vector_of_doubles.size(); i = i + 1) {
                     if (vector_of_doubles.at(i).index == index) {
@@ -101,7 +101,7 @@ class list {
             }
         }
 
-        std::string at(int index, std::string type) {
+        std::string at(int index, std::string type) const  {
             if (index <= indexes) {
                 for (int i = 0; i < vector_of_strings.size(); i = i + 1) {
                     if (vector_of_strings.at(i).index == index) {
@@ -114,7 +114,7 @@ class list {
             }
         }
         
-        char at(int index, char type) {
+        char at(int index, char type) const  {
             if (index <= indexes) {
                 for (int i = 0; i < vector_of_chars.size(); i = i + 1) {
                     if (vector_of_chars.at(i).index == index) {
@@ -196,7 +196,7 @@ class list {
             this->remove(indexes);
         }
 
-        int get_len() {
+        int get_len() const {
             return len;
         }
 

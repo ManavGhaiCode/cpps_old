@@ -2,6 +2,7 @@
 #define _LIST_H_
 
 #include <iostream>
-#include "./classes/listClass.h"
+#include "./1dList.h"
+#include "./2dList.h"
 
 #endif
