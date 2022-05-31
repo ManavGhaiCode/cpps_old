@@ -16,4 +16,5 @@ class nodeChar {
         }
 
     friend class list;
+    friend class list2D;
 };

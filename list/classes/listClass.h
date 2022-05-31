@@ -201,6 +201,7 @@ class list {
         }
 
         friend std::ostream& operator<<(std::ostream& os,  const list& rhs);
+        friend class list2D;
 };
 
 std::ostream& operator<<(std::ostream& os, const list& rhs) {
