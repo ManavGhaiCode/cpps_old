@@ -22,5 +22,7 @@ int main() {
 
     li2d.log();
 
+    li2d.at(0).log();
+
     return 0;
 }

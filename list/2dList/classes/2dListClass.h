@@ -23,6 +23,10 @@ class list2D {
             indexes = indexes + 1;
         }
 
+        list at(int index) {
+            return vector_of_lists[index];
+        }
+
         void log() {
             std::cout << "[ ";
 
