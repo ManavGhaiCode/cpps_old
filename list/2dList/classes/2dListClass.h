@@ -71,6 +71,10 @@ class list2D {
         void pop() {
             this->remove(indexes);
         }
+
+        int get_len() {
+            return len;
+        }
 };
 
 #endif

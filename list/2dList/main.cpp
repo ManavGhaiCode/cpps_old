@@ -33,6 +33,7 @@ int main() {
     li2d.log();
     li2d.pop();
     li2d.log();
+    std::cout << li2d.get_len() << std::endl;
 
     return 0;
 }
