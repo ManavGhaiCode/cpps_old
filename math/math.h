@@ -11,9 +11,9 @@ namespace Math
 {
     double PI = 3.14159265358979323846264338327950288419716939937510;
 
-    // add methords
+    
 
-    // base add functions
+    
 
     int add(int n1, int n2)
     {
@@ -30,7 +30,7 @@ namespace Math
         return n1 + n2;
     }
 
-    // complex add functions
+    
 
     int add(int arr[], int size)
     {
@@ -59,9 +59,9 @@ namespace Math
         return ans;
     }
 
-    // sudtract methords
+    
 
-    // base subtract functions
+    
 
     int subtract(int n1, int n2)
     {
@@ -78,7 +78,7 @@ namespace Math
         return n1 - n2;
     }
 
-    // complex subtract functions
+    
 
     int subtract(int arr[], int size)
     {
@@ -107,9 +107,9 @@ namespace Math
         return ans;
     }
 
-    // multiple methords
+    
 
-    // bace multiple functions
+    
 
     int multiple(int n1, int n2)
     {
@@ -126,7 +126,7 @@ namespace Math
         return n1 + n2;
     }
 
-    // complex multiple functions
+    
 
     int multiple(int arr[], int size)
     {
@@ -155,9 +155,9 @@ namespace Math
         return ans;
     }
 
-    // divide methords
+    
 
-    // bace divide functions
+    
 
     int divide(int n1, int n2)
     {
@@ -174,7 +174,7 @@ namespace Math
         return n1 / n2;
     }
 
-    // complex divide functions
+    
 
     int divide(int arr[], int size)
     {
@@ -203,9 +203,9 @@ namespace Math
         return ans;
     }
 
-    // Floor, Ceil functions
+    
 
-    // Floor Function
+    
 
     int Floor(double num)
     {
@@ -215,7 +215,7 @@ namespace Math
         return rnum;
     }
 
-    // Ceil function
+    
 
     int Ceil(double num)
     {
