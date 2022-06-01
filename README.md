@@ -1,5 +1,6 @@
 # cpps
-cpps is a a library for c++ which adds abstractions like print functions, input functions, Consoles like Consoles in JS but much better, etc. plz see the danger area before doing some thing you don't understand. To get all the extions include the header file in "/path/to/cpps/cpps.h"
+
+Cpps is for people who are getting started with C++, pors can also use this for ease of use with C++. Cpps is a a library for c++ which adds abstractions like print functions, input functions, lists, etc. plz see the danger area before doing some thing you don't understand. To get all the extions include the header file in "/path/to/cpps/cpps.h"
 
 ## Extions
 
@@ -41,25 +42,17 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
 
 4. math
 
-    **decription** - math is a very simple namespace with 6 functions add, subtract, multiple, divide, Floor, Ceil, tax square, cube, percent. You shold have under-stood what the functions do.
-
-    **eg** - 
-
-    ```c++
-    #include <iostream>
-
-    #include "path/to/cpps/cpps.h"
-
-    int func(string[]) 
-    {
-        print(Math::add(1, 78));
-        print(Math::add(1.745, 78.9475));
-
-        print(Math::tax(70000078834));
-    }
-
-    Console con{func};
-    ```
+    **decription** - Math is a simple namespace. It has 10 functions. They are -
+    * Add - adds a vector of number or two numbers together
+    * Subtract - subtracts a vector of number or two numbers
+    * multiple - multiples a vector of number or two numbers together
+    * divide - divides a vector of number or two numbers
+    * Floor - used to turn a float or a double into a int by the decreasing the number
+    * Ceil - used to turn a float or a double into a int by the increasing the number
+    * tax - used for tax numbers at Indian rates
+    * square - squares the number
+    * cube - cubes the number
+    * percent - return a precentage of a number
 
 5. char-add-ons
 
@@ -73,122 +66,56 @@ cpps is a a library for c++ which adds abstractions like print functions, input 
 
 6. list
 
-    **decription** - It is my take on arrays because i find that c++ arrays are not good and vectors don't store more than one type of nodes but I am use JS in JS you can store all types of nodes I want c++ to be more easy so I tryed to make arrays hold more type of nodes than 1.
+    **decription** - It is my take on arrays because I find that c++ arrays are not good and vectors don't store more than one type of nodes but I use JS in JS you can store all types of nodes, I want c++ to be more easy so I tryed to make arrays hold more type of nodes than 1. It has 2 types 1DLists(list), 2DLists(list2D).
 
-    **Waht function to use?** - there are 4 functions to use there are - 
-
-    "add" - It add node to the list.
-
-    e.g. - 
-
-    ```c++
-    #include <iostream>
-
-    #include "./list/list.h"
-
-    int main() {
-        list li;
-
-        li.add("hi boiii");
-        li.add(47.99);
-        li.add(99);
-
-        li.log();
-    }
-    ```
-
-    "at" - It gets a node's value at a index.
-
-    e.g. - 
-
-    ```c++
-    #include <iostream>
-
-    #include "./list/list.h"
-
-    int main() {
-        list li;
-
-        li.add("hi boiii");
-        li.add(47.99);
-        li.add(99);
-
-        li.at(0, s);
-    }
-    ```
-
-    "log" - It can be used to get the values in the list you can also use cout with this class.
-
-    e.g. - 
-
-    ```c++
-    #include <iostream>
-
-    #include "./list/list.h"
-
-    int main() {
-        list li;
-
-        li.add("hi boiii");
-        li.add(47.99);
-        li.add(99);
-
-        li.log();
-    }
-    ```
-
-    "chValue" - chValue stands for change value it is use tochange the value.
-
-    .e.g -
-
-    ```c++
-    #include <iostream>
-
-    #include "./list/list.h"
-
-    int main() {
-        list li;
-
-        li.add("hi boiii");
-        li.add(47.99);
-        li.add(99);
-
-        li.chValue(2, 888);
-        li.log();
-    }
-    ```
+    The list class 6 functions -
+    * push - to add more elements or nodes to the list
+    * at - returns the value of a node at a given index
+    * log - prints the list
+    * ch_value - change a value of a given node at a give index. It take in the value before the index
+    * remove - deletes the node at a given index  
+    * pop - remove the node at the larges index
+    * get_len - return the length of a list
 
     I am trying to put more features in the list class.
 
     Try this code to test the class -
 
     ```c++
-    #include <iostream>
-
-    #include "./list/list.h"
+    #include "path/to/cpps/list/list.h"
+    #include "path/to/cpps/gp/gp.h"
 
     int main() {
         list li;
 
-        li.add("hi boiii");
-        li.add(47.99);
-        li.add(99);
+        li.push("hi boiii");
+        li.push(47.99);
+        li.push(99);
 
         li.log();
 
-        std::cout << li << std::endl;
+        print(li.at(0)); // the print function is raped a around the list::at function as the list::at function can't print the index the the cli
+
+        ch_value(788.467, 1); // change the the value of node at index 1 in this case
+
+        print(li.at(1)); 
+        li.remove(0);
+        li.pop(); // removes the 1 in this case
+
+        li.get_len();
+
+        std::cout << li << std::endl; // prints or logs the list using cout
     }
     ```
-
-    **What are the vars "i", "d", "s" ?** - **"i"**, **"d"**, **"s"** are special var which allow you to access a value at an index in a list.
 
 ## Install
 
 to install the repo choose one release -
 
-[1.3.1](https://github.com/ManavGhaiCode/cpps/releases/tag/1.3.1)
+* [1.3.1](https://github.com/ManavGhaiCode/cpps/releases/tag/1.3.1)
+* [1.2.0](https://github.com/ManavGhaiCode/cpps/releases/tag/1.2.0)
 
-[1.2.0](https://github.com/ManavGhaiCode/cpps/releases/tag/1.2.0)
+and get the zip verson and unzip it.
 
 ## DANGER!
 
@@ -210,9 +137,6 @@ Console conmain {lolInfinity};
 
 In the following code it looks like only 2 console are created but if you think about the lolInfinity is a recursive function you make a console which makes console and the console which was made also makes consoles and so on. 🌋🌋🌋 no more ram left ):
 
-
-and get the zip verson and unzip it.
-
 ## SORRY
 
-I would like to SORRY because of the 5 typos history.
+I would like to SORRY because of the 5 typos history. 
