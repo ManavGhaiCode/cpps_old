@@ -108,6 +108,8 @@ Cpps is for people who are getting started with C++, pors can also use this for 
     }
     ```
 
+    Note - Function ch_value() in class list2D.
+
 ## Install
 
 to install the repo choose one release -
