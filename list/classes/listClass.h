@@ -15,7 +15,6 @@ class list {
         std::vector<nodeInt> vector_of_ints;
         std::vector<nodeDouble> vector_of_doubles;
         std::vector<nodeString> vector_of_strings;
-        std::vector<nodeChar> vector_of_chars;
 
         void Dindexes(int index) {
             for (nodeInt node : vector_of_ints)
@@ -29,10 +28,6 @@ class list {
             for (nodeString node : vector_of_strings)
                 if (node.index > index)
                     vector_of_strings[node.vect_index].index = index - 1;
-
-            for (nodeChar node : vector_of_chars)
-                if (node.index > index)
-                    vector_of_chars[node.vect_index].index = index - 1;
         }
     public:
         void push(int val) {
@@ -58,16 +53,6 @@ class list {
         void push(std::string val) {
             nodeString new_node { ( indexes + 1 ), vector_of_strings.size(), val };
             vector_of_strings.push_back(new_node);
-
-            indexes = indexes + 1;
-            len = len + 1;
-            
-            return;
-        }
-
-        void push(char val) {
-            nodeChar new_node { ( indexes + 1 ), vector_of_chars.size(), val };
-            vector_of_chars.push_back(new_node);
 
             indexes = indexes + 1;
             len = len + 1;
@@ -113,19 +98,6 @@ class list {
                 return "-0.00";
             }
         }
-        
-        char at(int index, char type) const  {
-            if (index <= indexes) {
-                for (int i = 0; i < vector_of_chars.size(); i = i + 1) {
-                    if (vector_of_chars.at(i).index == index) {
-                        return vector_of_chars.at(i).value;
-                    }
-                }
-            } else {
-                std::cout << "No value at index: " << index << " was found" << std::endl;
-                return '-';
-            }
-        }
 
         void log() const {
             std::cout << "[ ";
@@ -137,9 +109,6 @@ class list {
                 std::cout << node.value << ", ";
 
             for (auto node : vector_of_strings)
-                std::cout << node.value << ", ";
-
-            for (auto node : vector_of_chars)
                 std::cout << node.value << ", ";
 
             std::cout << "]" << std::endl;
@@ -163,12 +132,6 @@ class list {
                     vector_of_strings[node.vect_index].value = value;
         }
 
-        void ch_value(char value, int index) {
-            for (nodeChar node : vector_of_chars)
-                if (node.index == index)
-                    vector_of_chars[node.vect_index].value = value;
-        }
-
         void remove(int index) {
             for (nodeInt node : vector_of_ints)
                 if (node.index == index)
@@ -181,10 +144,6 @@ class list {
             for (nodeString node : vector_of_strings)
                 if (node.index == index)
                     vector_of_strings.erase((vector_of_strings.begin() + node.vect_index));
-
-            for (nodeChar node : vector_of_chars)
-                if (node.index == index)
-                    vector_of_chars.erase((vector_of_chars.begin() + node.vect_index));
 
             len = len - 1;
             indexes = indexes - 1;

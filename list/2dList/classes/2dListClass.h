@@ -42,9 +42,6 @@ class list2D {
                 for (auto node : li.vector_of_strings)
                     std::cout << node.value << ", ";
 
-                for (auto node : li.vector_of_chars)
-                    std::cout << node.value << ", ";
-
                 std::cout << "]";
 
                 std::cout << ", ";
