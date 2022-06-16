@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 
-g++ -Wall -std=c++14 $1
+g++ -Wall -std=$1 $2
