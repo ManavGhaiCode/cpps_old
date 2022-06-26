@@ -2,6 +2,7 @@
 #include <fstream>
 #include <memory>
 #include <vector>
+#include <functional>
 
 #include "./iomnip/iomnipTypes.hpp"
 
@@ -38,5 +39,13 @@ namespace cpps {
         IntType Int;
         BoolType Bool;
         GenType Gen;
+
+        template<typename T> void out(T obj) {
+            std::cout << obj << std::endl;
+        }
+
+        template<typename T> void out(T obj, std::function<void(T)> func) {
+            func(obj);
+        }
     };
 };

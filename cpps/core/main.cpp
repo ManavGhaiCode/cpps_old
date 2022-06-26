@@ -1,5 +1,11 @@
 #include <iostream>
+#include <string>
+
 #include "./cpps.hpp"
+
+void func(std::string object) {
+    std::cout << object << std::endl;
+}
 
 int main() {
     cpps::io::Int.showbase();
@@ -68,6 +74,10 @@ int main() {
     cpps::io::Gen.setw(10);
 
     std::cout << "Hello" << std::endl;
+
+    cpps::io::out("hello");
+
+    cpps::io::out<std::string>("hello", func);
 
     return 0;
 }
