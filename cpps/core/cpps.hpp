@@ -1,3 +1,6 @@
+#ifndef _CPPS_H_
+#define _CPPS_H_
+
 #include <iostream>
 #include <fstream>
 #include <memory>
@@ -49,3 +52,5 @@ namespace cpps {
         }
     };
 };
+
+#endif
