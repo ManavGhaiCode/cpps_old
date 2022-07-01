@@ -54,4 +54,8 @@ namespace fileSystem {
             cwd = DirToCd;
         }
     }
+
+    std::string get_cwd() {
+        return cwd;
+    }
 };

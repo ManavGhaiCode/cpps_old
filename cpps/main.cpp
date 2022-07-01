@@ -16,5 +16,7 @@ int main() {
     }
     std::cout << "]" << std::endl;
 
+    std::cout << fileSystem::get_cwd() << std::endl;
+
     return 0;
 }
