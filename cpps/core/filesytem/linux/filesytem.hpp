@@ -4,13 +4,25 @@
 #include <filesystem>
 
 namespace fileSystem {
+    std::string cwd = "/";
+
     std::vector<std::string> ls() {
         std::vector<std::string> returnValue;
 
         DIR *dir;
         struct dirent *ent;
 
-        if ((dir = opendir("/")) != NULL) {
+        int strToPassLen = cwd.length() + 1;
+
+        char strToPass[strToPassLen];
+
+        for (int i = 0; strToPassLen > i; i++) {
+            strToPass[i] = cwd.c_str()[i];
+        }
+
+        const char* strToPassPtr {strToPass};
+
+        if ((dir = opendir(strToPassPtr)) != NULL) {
             while ((ent = readdir(dir)) != NULL) {
                 returnValue.push_back(ent->d_name);
             }
@@ -21,6 +33,8 @@ namespace fileSystem {
         } else {
             return returnValue;
         }
+
+        delete strToPassPtr;
     }
 
 };
