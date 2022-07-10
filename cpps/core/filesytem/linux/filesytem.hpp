@@ -29,12 +29,12 @@ namespace fileSystem {
 
             closedir(dir);
 
-            delete strToPassPtr;
             return returnValue;
         } else {
-            delete strToPassPtr;
             return returnValue;
         }
+
+        delete strToPassPtr;
     }
 
     void cd(std::string DirToCd) {
@@ -57,5 +57,14 @@ namespace fileSystem {
 
     std::string get_cwd() {
         return cwd;
+    }
+
+    std::tuple<std::ifstream, std::ofstream> get_file(std::string FileToOpen) {
+        std::tuple<std::ifstream, std::ofstream> returnValue;
+
+        std::get<0>(returnValue).open(cwd + "/" + FileToOpen);
+        std::get<1>(returnValue).open(cwd + "/" + FileToOpen);
+
+        return returnValue;
     }
 };

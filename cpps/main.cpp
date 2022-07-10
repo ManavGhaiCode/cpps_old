@@ -18,5 +18,12 @@ int main() {
 
     std::cout << fileSystem::get_cwd() << std::endl;
 
+    auto my_file = fileSystem::get_file("file");
+    std::string line;
+
+    while (std::getline(std::get<0>(my_file), line)) {
+        std::cout << line << std::endl;
+    }
+
     return 0;
 }
