@@ -29,12 +29,12 @@ namespace fileSystem {
 
             closedir(dir);
 
+            delete strToPassPtr;
             return returnValue;
         } else {
+            delete strToPassPtr;
             return returnValue;
         }
-
-        delete strToPassPtr;
     }
 
     void cd(std::string DirToCd) {
