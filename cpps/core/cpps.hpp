@@ -50,6 +50,38 @@ namespace cpps {
         template<typename T> void out(T obj, std::function<void(T)> func) {
             func(obj);
         }
+
+        template<typename T> void out(std::vector<T> obj) {
+            std::cout << "[ ";
+            for (T childObj : obj) {
+                std::cout << childObj << ", ";
+            }
+            std::cout << " ]" << std::endl;
+        }
+
+        template<typename T> void out(std::vector<T> obj, std::function<void(T)> func) {
+            std::cout << "[ ";
+            for (T childObj : obj) {
+                func(childObj);
+            }
+            std::cout << " ]" << std::endl;
+        }
+
+        template<typename T> void out(T obj[], int size) {
+            std::cout << "[ ";
+            for (int i = 0; i < size; i++) {
+                std::cout << obj[i] << ", ";
+            }
+            std::cout << "]" << std::endl;
+        }
+
+        template<typename T> void out(T obj[], int size, std::function<void(T)> func) {
+            std::cout << "[ ";
+            for (int i = 0; i < size; i++) {
+                func(obj[i]);
+            }
+            std::cout << " ]" << std::endl;
+        }
     };
 };
 
