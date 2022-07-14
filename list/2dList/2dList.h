@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 
-#include "../../1dList.h"
+#include "../1dList.h"
 
 #include <iostream>
 
