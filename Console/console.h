@@ -6,46 +6,23 @@
 #include <string>
 #include <functional>
 
-#include "../vars.h"
-#include "./vars.h"
+class Console {
+    private:
+        std::function<int()> func_main = []() -> int {
+            std::cout << "Wellcome to CPPS :)" << std::endl;
+            return 0;
+        };
 
-using namespace std;
+    public:
 
-class Console
-{
-private:
-    function<int(string[])> func_main = [](string args[]) -> int
-    {
-        cout << HW << endl;
-        return 0;
-    };
-    void change_FM(function<int(string[])> func) { func_main = func; }
+        Console(std::function<int()> usr_func_main) {
+            this->func_main = usr_func_main;
+            this->run();
+        }  
 
-public:
-    Console()
-    {
-        this->run();
-    }
-
-    Console(function<int(string[])> func)
-    {
-        change_FM(func);
-        this->run();
-    }
-
-    void run()
-    {
-        cout << console << ' ' << '-' << ' '
-             << '\n'
-             << endl;
-        string arr[3];
-        arr[0] = lol;
-        arr[1] = lol2;
-        arr[2] = lol3;
-
-        func_main(arr);
-        cout << endl;
-    }
+        void run() {
+            this->func_main();
+        }
 };
 
 int main()
