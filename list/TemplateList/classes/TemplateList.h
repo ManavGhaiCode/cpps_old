@@ -22,7 +22,7 @@ template<typename T> class templateList {
             length += 1;
         }
 
-        T get(int index) {
+        T at(int index) {
             return vect.at(index).value;
         }
 
