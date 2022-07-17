@@ -20,5 +20,11 @@ int main() {
     templi.get(0).log();
     templi.get(1).log();
 
+    li2D.push(li);
+
+    templi.ch_value(li2D, 1);
+
+    templi.get(1).log();
+
     return 0;
 }

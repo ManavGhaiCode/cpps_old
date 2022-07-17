@@ -15,7 +15,7 @@ template<typename T> class templateList {
         templateList() = default;
 
         void push(T value) {
-            TempNode<T> newNode { (indexes + 1), value };
+            TempNode<T> newNode { (indexes + 1), vect.size(), value };
 
             vect.push_back(newNode);
             indexes += 1;
@@ -24,5 +24,13 @@ template<typename T> class templateList {
 
         T get(int index) {
             return vect.at(index).value;
+        }
+
+        void ch_value(T value, int index) {
+            for (TempNode<T> node : vect) {
+                if (node.index == index) {
+                    vect[node.vect_index].value = value;
+                }
+            }
         }
 };
