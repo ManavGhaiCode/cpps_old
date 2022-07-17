@@ -33,4 +33,8 @@ template<typename T> class templateList {
                 }
             }
         }
+
+        int get_len() {
+            return length;
+        }
 };

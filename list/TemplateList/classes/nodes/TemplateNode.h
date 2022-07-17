@@ -11,4 +11,6 @@ template<typename T> class TempNode {
             this->value = value;
             this->vect_index = vect_index;
         }
+
+        ~TempNode() = default;
 };

@@ -17,14 +17,18 @@ int main() {
     templi.push(li2D);
     templi.push(li2D);
 
-    templi.get(0).log();
-    templi.get(1).log();
-
     li2D.push(li);
 
     templi.ch_value(li2D, 1);
 
-    templi.get(1).log();
+    int len = templi.get_len();
+    std::cout << len << std::endl;
+
+    templi.push(li2D);
+    templi.push(li2D);
+
+    len = templi.get_len();
+    std::cout << len << std::endl;
 
     return 0;
 }
