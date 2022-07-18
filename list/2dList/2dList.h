@@ -72,6 +72,8 @@ class list2D {
         int get_len() {
             return len;
         }
+
+        friend class list3D;
 };
 
 #endif

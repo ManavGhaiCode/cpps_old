@@ -17,4 +17,5 @@ class nodeInt {
 
     friend class list;
     friend class list2D;
+    friend class list3D;
 };
