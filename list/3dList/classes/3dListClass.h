@@ -30,4 +30,29 @@ class list3D {
                 }
             }
         }
+
+
+        void log() {
+            std::cout << "[ ";
+            for (list2DNode TopNode : vector_of_2DLists) {
+                std::cout << "[ ";
+                for (int i = 0; i < TopNode.value.get_len(); i++) {
+                    std::cout << "[ ";
+                    for (int j = 0; j < TopNode.value.vector_of_lists.at(i).vector_of_ints.size(); j++) {
+                        std::cout << TopNode.value.vector_of_lists.at(i).vector_of_ints.at(j).value << ", ";
+                    }
+
+                    for (int j = 0; j < TopNode.value.vector_of_lists.at(i).vector_of_doubles.size(); j++) {
+                        std::cout << TopNode.value.vector_of_lists.at(i).vector_of_doubles.at(j).value << ", ";
+                    }
+
+                    for (int j = 0; j < TopNode.value.vector_of_lists.at(i).vector_of_strings.size(); j++) {
+                        std::cout << TopNode.value.vector_of_lists.at(i).vector_of_strings.at(j).value << ", ";
+                    }
+                    std::cout << "], ";
+                }
+                std::cout << "], ";
+            }
+            std::cout << "]" << std::endl;
+        }
 };

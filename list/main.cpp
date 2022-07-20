@@ -17,8 +17,7 @@ int main() {
     li3D.push(li2D);
     li3D.push(li2D);
 
-    li3D.at(0).log();
-    li3D.at(1).log();
+    li3D.log();
 
     return 0;
 }
