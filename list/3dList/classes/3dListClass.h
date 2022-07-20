@@ -55,4 +55,12 @@ class list3D {
             }
             std::cout << "]" << std::endl;
         }
+
+        void ch_value(list2D new_value, int index) {
+            for (list2DNode node : vector_of_2DLists) {
+                if (node.index == index) {
+                    vector_of_2DLists[node.vect_index].value = new_value;
+                }
+            }
+        }
 };

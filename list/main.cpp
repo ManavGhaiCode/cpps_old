@@ -19,5 +19,13 @@ int main() {
 
     li3D.log();
 
+    li2D.push(li);
+    li2D.push(li);
+    li2D.push(li);
+
+    li3D.ch_value(li2D, 0);
+
+    li3D.log();
+    
     return 0;
 }
