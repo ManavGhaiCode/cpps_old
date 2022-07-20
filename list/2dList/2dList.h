@@ -16,6 +16,9 @@ class list2D {
         std::vector<list> vector_of_lists;
 
     public:
+        list2D() {};
+        ~list2D() = default;
+
         void push(list li) {
             vector_of_lists.push_back(li);
 
