@@ -31,7 +31,6 @@ class list3D {
             }
         }
 
-
         void log() {
             std::cout << "[ ";
             for (list2DNode TopNode : vector_of_2DLists) {
@@ -62,5 +61,9 @@ class list3D {
                     vector_of_2DLists[node.vect_index].value = new_value;
                 }
             }
+        }
+
+        int get_len() {
+            return this->length;
         }
 };

@@ -23,9 +23,7 @@ int main() {
     li2D.push(li);
     li2D.push(li);
 
-    li3D.ch_value(li2D, 0);
-
-    li3D.log();
+    std::cout << li3D.get_len() << std::endl;
     
     return 0;
 }
