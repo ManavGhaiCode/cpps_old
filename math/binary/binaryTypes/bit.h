@@ -18,6 +18,16 @@ class bit {
             std::exit(1);
         }
 
+        void set_value(bool new_value) {
+            if (new_value) {
+                value = 1;
+                return;
+            } else if (!new_value) {
+                value = 0;
+                return;
+            }
+        }
+
         int get_value() {
             if (value) return 1;
             return 0;
