@@ -1,3 +1,6 @@
+#ifndef _BYTE_H_
+#define _BYTE_H_
+
 #include <iostream>
 #include <vector>
 
@@ -57,3 +60,5 @@ class bite {
             return decimal_out;
         }
 };
+
+#endif

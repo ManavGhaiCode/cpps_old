@@ -1,3 +1,6 @@
+#ifndef _BIT_H_
+#define _BIT_H_
+
 #include <iostream>
 
 class bit {
@@ -33,3 +36,5 @@ class bit {
             return 0;
         }
 };
+
+#endif
