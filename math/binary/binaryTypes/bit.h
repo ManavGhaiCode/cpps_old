@@ -8,6 +8,8 @@ class bit {
         bool value;
     
     public:
+        bit();
+        
         bit(int val) {
             set_value(val);
         }   
