@@ -8,7 +8,7 @@ class bit {
         bool value;
     
     public:
-        bit();
+        bit() = default;
         
         bit(int val) {
             set_value(val);
