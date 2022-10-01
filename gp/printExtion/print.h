@@ -17,35 +17,67 @@ template<typename T> void print(T obj, std::function<void(T)> func) {
 }
 
 template<typename T> void print(std::vector<T> obj) {
-    std::cout << "[ ";
-    for (T childObj : obj) {
-        std::cout << childObj << ", ";
+    if (!arrayBinay) {
+        std::cout << "[ ";
+        for (T childObj : obj) {
+            std::cout << childObj << ", ";
+        }
+        std::cout << " ]" << std::endl;
+    } else {        
+        std::cout << "[(vector_out) ";
+        for (T childObj : obj) {
+            std::cout << childObj << ", ";
+        }
+        std::cout << " ]" << std::endl;
     }
-    std::cout << " ]" << std::endl;
 }
 
 template<typename T> void print(std::vector<T> obj, std::function<void(T)> func) {
-    std::cout << "[ ";
-    for (T childObj : obj) {
-        func(childObj);
+    if (!arrayBinay) {
+        std::cout << "[ ";
+        for (T childObj : obj) {
+            func(childObj);
+        }
+        std::cout << " ]" << std::endl;
+    } else {
+        std::cout << "[(vector_out) ";
+        for (T childObj : obj) {
+            func(childObj);
+        }
+        std::cout << " ]" << std::endl;
     }
-    std::cout << " ]" << std::endl;
 }
 
 template<typename T> void print(T obj[], int size) {
-    std::cout << "[ ";
-    for (int i = 0; i < size; i++) {
-        std::cout << obj[i] << ", ";
+    if (!arrayBinay) {
+        std::cout << "[ ";
+        for (int i = 0; i < size; i++) {
+            std::cout << obj[i] << ", ";
+        }
+        std::cout << "]" << std::endl;
+    } else {
+        std::cout << "[(array_out) ";
+        for (int i = 0; i < size; i++) {
+            std::cout << obj[i] << ", ";
+        }
+        std::cout << "]" << std::endl;
     }
-    std::cout << "]" << std::endl;
 }
 
 template<typename T> void print(T obj[], int size, std::function<void(T)> func) {
-    std::cout << "[ ";
-    for (int i = 0; i < size; i++) {
-        func(obj[i]);
+    if (!arrayBinay) {
+        std::cout << "[ ";
+        for (int i = 0; i < size; i++) {
+            func(obj[i]);
+        }
+        std::cout << " ]" << std::endl;
+    } else {
+        std::cout << "[(array_out) ";
+        for (int i = 0; i < size; i++) {
+            func(obj[i]);
+        }
+        std::cout << " ]" << std::endl;
     }
-    std::cout << " ]" << std::endl;
-}
+} 
 
 #endif
