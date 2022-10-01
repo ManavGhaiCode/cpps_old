@@ -176,3 +176,21 @@ struct GenType
 };
 
 int GenType::numGenType = 0;
+
+struct ArrayType {
+    private:
+        static int numArrayType;
+        static bool getNumArrayType() { return numArrayType >= 1 ? true : false; }
+
+    public:
+        ArrayType() {
+            if (!getNumArrayType()) { numArrayType += 1; } else {
+                std::cerr << "The object has been made." << std::endl;
+                std::exit(1);
+            }
+        }
+
+        void binayRefences() {};
+};
+
+int ArrayType::numArrayType = 0;
