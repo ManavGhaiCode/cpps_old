@@ -55,4 +55,8 @@ string BrewLOL(char var)
 char ArrBrewHW[11]{'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd'};
 string HW = brew(ArrBrewHW, 11);
 
+// arrayBinay def
+
+bool arrayBinay = false;
+
 #endif
