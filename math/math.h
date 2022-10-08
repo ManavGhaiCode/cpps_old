@@ -8,6 +8,9 @@
 namespace Math
 {
     const double PI = 3.14159265358979323846264338327950288419716939937510;
+    const double C = 299792458;
+    const double km_C = 29979.2458;
+    const double m_C = 18628.2860054;
 
     template<typename T> T Floor(T num) {
         return std::floor(num);
