@@ -10,7 +10,7 @@ namespace Math
     const double PI = 3.14159265358979323846264338327950288419716939937510;
     const double C = 299792458;
     const double km_C = 29979.2458;
-    const double m_C = 18628.2860054;
+    const double mile_C = 18628.2860054;
 
     template<typename T> T Floor(T num) {
         return std::floor(num);
@@ -55,5 +55,13 @@ namespace Math
 
     template<typename T> double percent(T mainNumder, T percent) {
         return mainNumder * (percent / 100);
+    }
+
+    template<typename T> double factorial(T numTofactorial) {
+        if (numTofactorial == 1) {
+            return 1;
+        }
+
+        return numTofactorial * factorial(numTofactorial - 1);
     }
 };
