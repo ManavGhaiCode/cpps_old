@@ -1,0 +1,3 @@
+Hi, I waHi, I was made using the function open(); !
+ My name is test1...
+ I like chess!

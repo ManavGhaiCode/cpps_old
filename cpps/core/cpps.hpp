@@ -6,6 +6,10 @@
 #include <memory>
 #include <vector>
 #include <functional>
+#include <string>
+#include <bits/stdc++.h>
+
+#include "../../chars/chars.h"
 
 #include "./iomnip/iomnipTypes.hpp"
 
@@ -82,6 +86,79 @@ namespace cpps {
             }
             std::cout << " ]" << std::endl;
         }
+    };
+
+    class File {
+        private:
+            std::ifstream file_in;
+            std::ofstream file_out;
+
+        public:
+            File() {};
+
+            File(std::string file) {
+                open(file);
+            }
+
+            File(char file[]) {
+                open(file);
+            }
+
+            ~File() {
+                file_in.close();
+                file_out.close();
+            }
+
+            void open(std::string file) {
+                file_in.open(file);
+                file_out.open(file, ios::app);
+
+                if (!(file_in.is_open() and file_out.is_open())) {
+                    std::cerr << "unable to open or create file..." << std::endl;
+                    std::exit(1);
+                }
+            }
+
+            void open(char file[]) {
+                std::string file_name = brew(file, (sizeof(file) / sizeof(int)));
+
+                file_in.open(file);
+                file_out.open(file, ios::app);
+
+                if (!(file_in.is_open() and file_out.is_open())) {
+                    std::cerr << "unable to open or create file..." << std::endl;
+                    std::exit(1);
+                }
+            }
+
+            void close() {
+                file_in.close();
+                file_out.close();
+            }
+
+            void shift(std::string new_file) {
+                close();
+                open(new_file);
+            }
+
+            void shift(char new_file[]) {
+                close();
+                open(new_file);
+            }
+
+            std::string read() {
+                char *read_out;
+
+                while ( file_in ) {
+                    read_out += file_in.get();
+                }
+            
+                return brew(read_out, sizeof(read_out));
+            }
+
+            void write(char Data[]) {
+                file_out.write(Data, sizeof(Data));
+            }
     };
 };
 
