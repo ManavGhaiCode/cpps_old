@@ -48,6 +48,16 @@ namespace cpps {
             void ch_name(T new_name) {
                 this->value = new_name;
             }
+
+            void operator=(Itom& rhs) {
+                this->set_value(rhs.name);
+            }
+
+            bool operator==(Itom& rhs) {
+                if (this->value == rhs.value) {
+                    return ture;
+                }
+            }
     };
 
     namespace io {
