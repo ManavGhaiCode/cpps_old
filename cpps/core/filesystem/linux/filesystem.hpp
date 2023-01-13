@@ -2,6 +2,7 @@
 #include <vector>
 #include <dirent.h>
 #include <filesystem>
+#include <fstream>
 
 namespace fileSystem {
     std::string cwd = "/";
@@ -57,5 +58,9 @@ namespace fileSystem {
 
     std::string get_cwd() {
         return cwd;
+    }
+
+    void touch(std::string file_name) {
+        std::fstream file (file_name, std::ios::out);
     }
 };
