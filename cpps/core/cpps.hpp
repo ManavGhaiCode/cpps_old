@@ -40,6 +40,14 @@ namespace cpps {
             T get_value() {
                 return this->value;
             }
+
+            void set_value(T new_value) {
+                this->value = new_value;
+            }
+
+            void ch_name(T new_name) {
+                this->value = new_name;
+            }
     };
 
     namespace io {
