@@ -3,8 +3,7 @@
 
 #include "./nodes.h"
 
-class List
-{
+class list {
     private:
         std::vector<IntNode> vect_Ints;
         std::vector<DoubleNode> vect_Doubles;
@@ -14,8 +13,8 @@ class List
         int indexes = -1;
 
     public:
-        List() {};
-        ~List() {};
+        list() {};
+        ~list() {};
 
         void push(int raw_value) {
             IntNode value;
