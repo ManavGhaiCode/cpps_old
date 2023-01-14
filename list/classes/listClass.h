@@ -54,5 +54,20 @@ class list {
             len += 1;
             indexes += 1;
         }
+
+        void log() const {
+            std::cout << "[ ";
+
+            for (auto node : vect_Ints)
+                std::cout << node.value << ", ";
+
+            for (auto node : vect_Doubles)
+                std::cout << node.value << ", ";
+
+            for (auto node : vect_Strings)
+                std::cout << "'" << node.value << "'" << ", ";
+
+            std::cout << "]" << std::endl;
+        }
         
 };
