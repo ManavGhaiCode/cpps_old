@@ -28,5 +28,31 @@ class list {
             len += 1;
             indexes += 1;
         }
+
+        void push(double raw_value) {
+            DoubleNode value;
+
+            value.value = raw_value;
+            value.index = len;
+            value.vect_index = vect_Doubles.size();
+
+            vect_Doubles.push_back( value );
+
+            len += 1;
+            indexes += 1;
+        }
+
+        void push(std::string raw_value) {
+            StringNode value;
+
+            value.value = raw_value;
+            value.index = len;
+            value.vect_index = vect_Strings.size();
+
+            vect_Strings.push_back( value );
+
+            len += 1;
+            indexes += 1;
+        }
         
 };
