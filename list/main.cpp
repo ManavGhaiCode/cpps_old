@@ -9,5 +9,9 @@ int main() {
 
     li.log();
 
+    std::cout << li.at(0, 0) << std::endl;
+    std::cout << li.at(1, 0.00) << std::endl;
+    std::cout << li.at(2, "lol") << std::endl;
+
     return 0;
 }
