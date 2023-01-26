@@ -5,20 +5,20 @@
 
 #include "./ServerSocket.h"
 
-class Sever {
+class Server {
     private:
         ServerSocket *  sock;
         bool running = true;
-    protected:
+    public:
         virtual void accater() = 0;
         virtual void handler() = 0;
         virtual void respinder() = 0;
-    public:
-        Sever(int domain, int serviceType, int protocol, int port, u_long IP) {
+
+        Server(int domain, int serviceType, int protocol, int port, u_long IP) {
             sock = new ServerSocket (domain, serviceType, protocol, port, IP);
         };
 
-        Sever(int domain, int serviceType, int protocol, int port, u_long IP, int bklog) {
+        Server(int domain, int serviceType, int protocol, int port, u_long IP, int bklog) {
             sock = new ServerSocket (domain, serviceType, protocol, port, IP);
             sock->setBacklog(bklog);
         };
@@ -30,8 +30,14 @@ class Sever {
             delete this;
         }
 
-        ~Sever() {
+        ~Server() {
             delete sock;
+        }
+
+        // Getters
+
+        ServerSocket getSock() {
+            return *sock;
         }
 };
 
